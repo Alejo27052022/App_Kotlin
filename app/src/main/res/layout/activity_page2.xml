@@ -10,38 +10,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="592dp"
-        android:layout_gravity="center">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="121dp"
-            android:layout_height="188dp"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/vaca2" />
-
-        <TextView
-            android:id="@+id/Manejo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="100dp"
-            android:text="Manejo"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="bottom|end"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="#ECECEC"
-            android:contentDescription="TODO"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/agregar"
-            tools:ignore="ContentDescription,DuplicateSpeakableTextCheck,HardcodedText,ImageContrastCheck" />
-    </FrameLayout>
+        android:layout_gravity="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,12 +23,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
-        <AutoCompleteTextView
-            android:id="@+id/autoCompleteTextView"
-            android:layout_width="308dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="AutoCompleteTextView" />
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -125,7 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
-            android:layout_marginLeft="60dp"
+            android:layout_marginLeft="55dp"
             android:layout_marginBottom="5dp"
             android:text="Produccion"
             android:textSize="12sp" />
@@ -145,7 +108,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
-            android:layout_marginRight="55dp"
+            android:layout_marginRight="50dp"
             android:layout_marginBottom="5dp"
             android:text="Animales"
             android:textSize="12sp" />
