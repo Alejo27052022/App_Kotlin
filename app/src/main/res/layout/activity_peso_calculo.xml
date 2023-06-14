@@ -10,48 +10,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="592dp"
-        android:layout_gravity="center">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="137dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="50dp"
-            android:text="Calculo de Peso de Bovinos"
-            android:textAlignment="viewStart"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="50dp"
-            android:text="Ver" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="137dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|start"
-            android:layout_marginLeft="50dp"
-            android:layout_marginBottom="100dp"
-            android:text="Calculo de Rendimiento del Canal Bovinos"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btn2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|end"
-            android:layout_marginRight="50dp"
-            android:layout_marginBottom="100dp"
-            android:text="Ver" />
-    </FrameLayout>
+        android:layout_gravity="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
