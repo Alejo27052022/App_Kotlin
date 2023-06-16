@@ -1,4 +1,14 @@
 package com.example.app.Code
+fun calcularPeso() {
+    print("Ingrese el Perímetro Toráxico en Centímetros: ")
+    val PT = readLine()?.toFloatOrNull() ?: 0.0f
+    print("Ingrese el Largo del cuerpo en centímetros: ")
+    val LC = readLine()?.toFloatOrNull() ?: 0.0f
+    val constante = 10838
+    val resultado = (PT * PT * LC) / constante
+    println("El peso calculado es: $resultado KG")
+}
+
 
 fun CalculoCanal(){
     var resultado:Float;
@@ -312,4 +322,5 @@ fun CalculoCanal(){
 
 fun main(){
     CalculoCanal();
+    calcularPeso();
 }
