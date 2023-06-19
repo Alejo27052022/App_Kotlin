@@ -10,7 +10,78 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="592dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/txtCalcular"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:text="Calculo de peso de Bóvinos"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/PT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="190dp"
+            android:text="Perimetro Toráxico "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/LCTEXT"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="275dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+        <TextView
+            android:id="@+id/LC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="290dp"
+            android:text="Largo del cuerpo"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/PTTEXT"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="175dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_calcularpeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="350dp"
+            android:text="Calcular" />
+
+        <TextView
+            android:id="@+id/pesoresultado"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="350dp"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold" />
+            />
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,7 +102,7 @@
         android:layout_gravity="bottom" >
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/home_btn"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="center|start"
@@ -81,7 +152,8 @@
             android:layout_marginBottom="5dp"
             android:background="#FFFFFF"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/barras" />
+            app:srcCompat="@drawable/barras"
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/textView4"
@@ -101,7 +173,8 @@
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="5dp"
             android:background="#FFFFFF"
-            app:srcCompat="@drawable/campanas" />
+            app:srcCompat="@drawable/campanas"
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/textView5"
