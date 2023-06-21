@@ -16,8 +16,12 @@
             android:id="@+id/txtCalcular"
             android:layout_width="207dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="102dp"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="20dp"
+            android:layout_marginEnd="103dp"
             android:text="Calculo de Rendimiento del Canal Bovinos"
             android:textAlignment="center"
             android:textSize="16sp"
@@ -120,6 +124,14 @@
             android:layout_marginLeft="60dp"
             android:layout_marginTop="350dp"
             android:text="Calcular" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="360dp"
+            android:text="Resultado1" />
 
     </RelativeLayout>
 
