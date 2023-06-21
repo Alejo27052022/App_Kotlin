@@ -9,7 +9,6 @@ fun calcularPeso() {
     println("El peso calculado es: $resultado KG")
 }
 
-
 fun CalculoCanal(){
     var resultado:Float;
     var resultado_libra:Float;

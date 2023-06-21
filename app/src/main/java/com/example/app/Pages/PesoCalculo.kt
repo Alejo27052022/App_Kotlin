@@ -1,9 +1,11 @@
 package com.example.app.Pages
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.TextView
 import com.example.app.R
 
@@ -16,6 +18,18 @@ class PesoCalculo : AppCompatActivity() {
             calcularPeso()
         }
 
+        val home: ImageButton = findViewById(R.id.home_btn)
+        val imgbtnManejo: ImageButton = findViewById(R.id.imgbtnManejo)
+
+        home.setOnClickListener{
+            val intent: Intent = Intent(this, Inicio::class.java)
+            startActivity(intent)
+        }
+
+        imgbtnManejo.setOnClickListener{
+            val intent: Intent = Intent(this, Page2::class.java)
+            startActivity(intent)
+        }
 
     }
 
