@@ -82,30 +82,17 @@
 
         <EditText
             android:id="@+id/txtPeso"
-            android:layout_width="91dp"
+            android:layout_width="145dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="162dp"
             android:layout_marginLeft="135dp"
+
             android:layout_marginTop="255dp"
+            android:layout_marginEnd="104dp"
             android:ems="10"
-            android:inputType="numberDecimal"
-
-            />
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="240dp"
-            android:layout_marginTop="245dp">
-
-            <AutoCompleteTextView
-                android:id="@+id/dropdown_menu_field_unidad"
-                android:layout_width="120dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:inputType="none" />
-
-        </com.google.android.material.textfield.TextInputLayout>
+            android:inputType="numberDecimal" />
 
         <TextView
             android:id="@+id/txtKG"
@@ -121,17 +108,53 @@
             android:id="@+id/btn_calcular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="154dp"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="350dp"
+            android:layout_marginEnd="145dp"
             android:text="Calcular" />
 
         <TextView
-            android:id="@+id/resultado"
+            android:id="@+id/resultado_kilo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="174dp"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="360dp"
-            android:text="Resultado1" />
+            android:layout_marginTop="420dp"
+            android:layout_marginEnd="165dp"
+            android:layout_marginBottom="139dp"
+            android:text="Resultado1"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/resultado_libra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="175dp"
+            android:layout_marginEnd="164dp"
+            android:layout_marginBottom="90dp"
+            android:text="Resultado2"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="69dp"
+            android:layout_marginBottom="298dp"
+            android:text="Kg"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
@@ -196,7 +219,7 @@
             android:textSize="12sp" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/imgbtnManejo"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="center|end"
@@ -213,7 +236,7 @@
             android:layout_gravity="bottom|center"
             android:layout_marginLeft="55dp"
             android:layout_marginBottom="5dp"
-            android:text="Produccion"
+            android:text="Manejo"
             android:textSize="12sp" />
 
         <ImageButton

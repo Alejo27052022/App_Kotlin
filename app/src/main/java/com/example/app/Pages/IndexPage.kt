@@ -14,7 +14,7 @@ class IndexPage : AppCompatActivity() {
 
         val frameLayout: FrameLayout = findViewById(R.id.frame_layout)
         frameLayout.setOnClickListener{
-            val intent: Intent = Intent(this, Page2::class.java)
+            val intent: Intent = Intent(this, Inicio::class.java)
             startActivity(intent)
         }
     }
