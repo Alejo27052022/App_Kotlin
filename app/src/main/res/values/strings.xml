@@ -2,4 +2,19 @@
     <string name="app_name">App</string>
     <string name="vaca">Vaca</string>
     <string name="control_bovinium">Control Bovinium</string>
+    <string name="calculo_de_peso_de_b_vinos">Calculo de peso de Bóvinos</string>
+    <string name="perimetro_tor_xico">Perimetro Toráxico</string>
+    <string name="largo_del_cuerpo">Largo del cuerpo</string>
+    <string name="calcular">Calcular</string>
+    <string name="todo">TODO</string>
+    <string name="home">Home</string>
+    <string name="todoh">TODO</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="produccion">Produccion</string>
+    <string name="j">TODO</string>
+    <string name="animales">Animales</string>
+    <string name="perimetro_toraxico">Perimetro_toraxico</string>
+    <string name="kh">kh</string>
+    <string name="kg">KG</string>
+    <string name="lb">LB</string>
 </resources>
