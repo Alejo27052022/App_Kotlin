@@ -17,4 +17,10 @@
     <string name="kh">kh</string>
     <string name="kg">KG</string>
     <string name="lb">LB</string>
+    <string name="unidad_animal">Unidad Animal</string>
+    <string name="unidad_animal_por_hect_rea">Unidad animal por hectárea</string>
+    <string name="asignaci_n_de_forraje">Asignación de forraje</string>
+    <string name="n_mero_de_animales">Número de animales</string>
+    <string name="peso">Peso</string>
+    <string name="hect_reas">Hectáreas</string>
 </resources>
