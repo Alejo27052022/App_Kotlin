@@ -14,16 +14,16 @@
 
         <TextView
             android:id="@+id/txtCalcular"
-            android:layout_width="207dp"
+            android:layout_width="235dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="102dp"
+            android:layout_marginStart="95dp"
             android:layout_marginLeft="100dp"
-            android:layout_marginEnd="103dp"
+            android:layout_marginEnd="81dp"
             android:text="Calculo de Rendimiento del Canal Bovinos"
             android:textAlignment="center"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
@@ -154,6 +154,16 @@
             android:text="Kg"
             android:textSize="16sp"
             android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="28dp"
+            android:layout_height="29dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:background="#ECECEC"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/info" />
 
     </RelativeLayout>
 
