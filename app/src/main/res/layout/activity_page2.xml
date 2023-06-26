@@ -16,12 +16,13 @@
             android:id="@+id/textView"
             android:layout_width="137dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="50dp"
             android:text="Calculo de Peso de Bovinos"
             android:textAlignment="viewStart"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextSizeCheck" />
 
         <Button
             android:id="@+id/btn1"
@@ -30,7 +31,8 @@
             android:layout_gravity="end"
             android:layout_marginTop="50dp"
             android:layout_marginRight="50dp"
-            android:text="Ver" />
+            android:text="Ver"
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
         <TextView
             android:id="@+id/textView6"
@@ -41,7 +43,29 @@
             android:layout_marginBottom="100dp"
             android:text="Calculo de Rendimiento del Canal Bovinos"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="-5dp"
+            android:text="Asignación de forraje"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="-5dp"
+            android:text="Ver" />
 
         <Button
             android:id="@+id/btn2"
@@ -80,7 +104,8 @@
             android:layout_marginBottom="5dp"
             android:background="#FFFFFF"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/casa" />
+            app:srcCompat="@drawable/casa"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView2"
@@ -101,7 +126,8 @@
             android:layout_marginBottom="5dp"
             android:background="#FFFFFF"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/vacachica" />
+            app:srcCompat="@drawable/vacachica"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView3"
@@ -122,7 +148,8 @@
             android:layout_marginBottom="5dp"
             android:background="#FFFFFF"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/barras" />
+            app:srcCompat="@drawable/barras"
+            tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView4"
@@ -142,7 +169,8 @@
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="5dp"
             android:background="#FFFFFF"
-            app:srcCompat="@drawable/campanas" />
+            app:srcCompat="@drawable/campanas"
+            tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView5"
