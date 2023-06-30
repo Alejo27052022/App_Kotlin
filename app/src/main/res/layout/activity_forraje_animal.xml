@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ECECEC"
-    tools:context=".Pages.Page2"
-    tools:ignore="ExtraText">
+    tools:context=".Pages.CalculoForraje"
+    >
 
     <TextView
         android:id="@+id/txtCalcularforraje"
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:layout_marginTop="80dp"
-        android:text="@string/asignaci_n_de_forraje"
+        android:text="Asignacion de Forraje"
         android:textAlignment="center"
         android:textSize="35sp"
         android:textStyle="bold"
@@ -27,7 +27,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="170dp"
         android:textAlignment="center"
-        android:text="@string/n_mero_de_animales"
+        android:text="Numero de Animales"
         android:textSize="20sp"
         android:textStyle="bold" />
     <EditText
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="230dp"
-        android:text="@string/peso"
+        android:text="Peso"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="300dp"
-        android:text="@string/hect_reas"
+        android:text="Hectareas"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -91,17 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="145dp"
         android:layout_marginTop="350dp"
-        android:text="@string/calcular" /><![CDATA[
-
-    />
-
-
-
-
-
-
-
-    ]]>
+        android:text="@string/calcular" />
 
     <TextView
         android:id="@+id/pesoresultadounidad"
@@ -120,7 +110,7 @@
         android:layout_height="69dp"
         android:layout_marginStart="190dp"
         android:layout_marginTop="450dp"
-        android:text="@string/unidad_animal"
+        android:text="Unidad Animal"
         android:textSize="18sp"
         android:textStyle="bold"
         tools:ignore="VisualLintBounds" />
@@ -142,18 +132,17 @@
         android:layout_height="64dp"
         android:layout_marginStart="190dp"
         android:layout_marginTop="550dp"
-        android:text="@string/unidad_animal_por_hect_rea"
+        android:text="Unidad Animal por Hectarea"
         android:textSize="20sp"
         android:textStyle="bold"
         tools:ignore="VisualLintBounds" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="59dp"
+        android:layout_height="32dp"
         android:background="#53BF35"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-
+        android:baselineAligned="false"
+        android:orientation="horizontal">
 
 
     </LinearLayout>

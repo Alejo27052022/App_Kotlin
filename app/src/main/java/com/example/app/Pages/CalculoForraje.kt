@@ -1,5 +1,3 @@
-@file:Suppress("ClassName")
-
 package com.example.app.Pages
 
 import android.os.Bundle
@@ -8,14 +6,14 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app.R
-import com.example.app.R.id.btn_calcforraje
 
-class calculoforraje : AppCompatActivity() {
+class CalculoForraje : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forraje_animal)
-        val buttonf: Button = findViewById(btn_calcforraje)
+
+        val buttonf: Button = findViewById(R.id.btn_calcforraje)
         buttonf.setOnClickListener {
             calcularforraje()
         }

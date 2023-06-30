@@ -14,6 +14,7 @@ class Page2 : AppCompatActivity() {
 
         val btn1: Button = findViewById(R.id.btn1)
         val btn2: Button = findViewById(R.id.btn2)
+        val btn3: Button = findViewById(R.id.btn3)
         val home: ImageButton = findViewById(R.id.home_btn)
         val imgbtnManejo: ImageButton = findViewById(R.id.imgbtnManejo)
 
@@ -23,6 +24,10 @@ class Page2 : AppCompatActivity() {
         }
         btn2.setOnClickListener{
             val intent: Intent = Intent(this, RendimientoCalculo::class.java)
+            startActivity(intent)
+        }
+        btn3.setOnClickListener{
+            val intent: Intent = Intent(this, CalculoForraje::class.java)
             startActivity(intent)
         }
 

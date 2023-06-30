@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ECECEC"
-    tools:context=".Pages.Page2">
+    tools:context=".Pages.RendimientoCalculo">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -169,14 +169,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="59dp"
+        android:layout_height="29dp"
         android:background="#53BF35"
         android:orientation="horizontal">
-
-        <SearchView
-            android:layout_width="4dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
 
     </LinearLayout>
 

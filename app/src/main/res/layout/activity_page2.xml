@@ -59,15 +59,6 @@
             tools:ignore="TextSizeCheck" />
 
         <Button
-            android:id="@+id/btn3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|end"
-            android:layout_marginRight="50dp"
-            android:layout_marginBottom="-5dp"
-            android:text="Ver" />
-
-        <Button
             android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,6 +66,15 @@
             android:layout_marginRight="50dp"
             android:layout_marginBottom="100dp"
             android:text="Ver" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="50dp"
+            android:text="Ver" />
+
     </FrameLayout>
 
     <LinearLayout

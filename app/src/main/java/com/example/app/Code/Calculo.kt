@@ -302,20 +302,6 @@ fun CalculoCanal(){
         }
 
     }
-    /*
-    println(razas[0])
-    println(razas[1])
-    println(razas[2])
-    println(razas[3])
-    println(razas[4])
-    println(razas[5])
-    println(razas[6])
-    println(razas[7])
-    println(razas[8])
-    println(razas[9])
-    println(razas[10])
-
-     */
 }
 
 

@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ECECEC"
-    tools:context=".Pages.Page2"
-    tools:ignore="ExtraText">
+    tools:context=".Pages.PesoCalculo"
+    >
 
     <TextView
         android:id="@+id/txtCalcular"
@@ -68,17 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="350dp"
-        android:text="@string/calcular" /><![CDATA[
-
-    />
-
-
-
-
-
-
-
-    ]]>
+        android:text="@string/calcular" />
 
     <TextView
         android:id="@+id/pesoresultado"
@@ -125,15 +115,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="59dp"
+        android:layout_height="34dp"
         android:background="#53BF35"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-
-        <SearchView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+        android:baselineAligned="false"
+        android:orientation="horizontal">
 
     </LinearLayout>
 
