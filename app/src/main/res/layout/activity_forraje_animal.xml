@@ -91,17 +91,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="145dp"
         android:layout_marginTop="350dp"
-        android:text="@string/calcular" /><![CDATA[
+        android:text="@string/calcular" />
 
-    />
-
-
-
-
-
-
-
-    ]]>
 
     <TextView
         android:id="@+id/pesoresultadounidad"
@@ -166,7 +157,7 @@
 
         <ImageButton
             android:id="@+id/home_btn"
-            android:layout_width="35dp"
+            android:layout_width="25dp"
             android:layout_height="35dp"
             android:layout_gravity="center|start"
             android:layout_marginStart="30dp"
