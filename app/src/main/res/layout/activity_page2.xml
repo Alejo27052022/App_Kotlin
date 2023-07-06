@@ -12,27 +12,32 @@
         android:layout_height="592dp"
         android:layout_gravity="center">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="137dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="50dp"
-            android:text="Calculo de Peso de Bovinos"
-            android:textAlignment="viewStart"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText,TextSizeCheck" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="50dp"
-            android:text="Ver"
-            tools:ignore="DuplicateSpeakableTextCheck" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:text="Calculo de Peso de Bovinos"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextSizeCheck"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="50dp" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Ver"
+                tools:ignore="DuplicateSpeakableTextCheck"
+                tools:layout_editor_absoluteX="274dp"
+                tools:layout_editor_absoluteY="50dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/textView6"
