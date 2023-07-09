@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:layout_marginTop="80dp"
-        android:text="@string/asignaci_n_de_forraje"
+        android:text="asignaciÓn_de_forraje"
         android:textAlignment="center"
         android:textSize="35sp"
         android:textStyle="bold"
@@ -26,10 +26,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="170dp"
+        android:text="n_mero_de_animales"
         android:textAlignment="center"
-        android:text="@string/n_mero_de_animales"
         android:textSize="20sp"
         android:textStyle="bold" />
+
     <EditText
         android:id="@+id/numeroanimales"
         android:layout_width="190dp"
@@ -58,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="230dp"
-        android:text="@string/peso"
+        android:text="peso"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -80,11 +81,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="300dp"
-        android:text="@string/hect_reas"
+        android:text="hect_reas"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />
-
+    @string/
     <Button
         android:id="@+id/btn_calcforraje"
         android:layout_width="wrap_content"
@@ -111,7 +112,7 @@
         android:layout_height="69dp"
         android:layout_marginStart="190dp"
         android:layout_marginTop="450dp"
-        android:text="@string/unidad_animal"
+        android:text="unidad_animal"
         android:textSize="18sp"
         android:textStyle="bold"
         tools:ignore="VisualLintBounds" />
@@ -133,7 +134,7 @@
         android:layout_height="64dp"
         android:layout_marginStart="190dp"
         android:layout_marginTop="550dp"
-        android:text="@string/unidad_animal_por_hect_rea"
+        android:text="unidad_animal_por_hect_rea"
         android:textSize="20sp"
         android:textStyle="bold"
         tools:ignore="VisualLintBounds" />
