@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    tools:context=".Pages.Inicio">
+
+    <!-- Primera sección (color verde) -->
+    <LinearLayout
+        android:id="@+id/firstSection"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="#53BF35"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buenas prácticas de ordeño" />
+    </LinearLayout>
+
+    <!-- Segunda sección (blanca con ScrollView) -->
+    <include
+        layout="@layout/ordeniotexto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/firstSection"
+        app:layout_constraintBottom_toTopOf="@id/thirdSection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tercera sección (contiene ImageButtons) -->
+    <LinearLayout
+        android:id="@+id/thirdSection"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- ImageButtons y TextViews aquí -->
+        <ImageButton
+            android:id="@+id/home_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|start"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/casa" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/home_btn"
+            app:layout_constraintBottom_toBottomOf="@id/home_btn"
+            app:layout_constraintTop_toTopOf="@id/home_btn"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|start"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/vacachica" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notificaciones"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/imageButton3"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton3"
+            app:layout_constraintTop_toTopOf="@id/imageButton3"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <ImageButton
+            android:id="@+id/imgbtnManejo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|end"
+            android:layout_marginRight="130dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/barras" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manejo"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/imgbtnManejo"
+            app:layout_constraintBottom_toBottomOf="@id/imgbtnManejo"
+            app:layout_constraintTop_toTopOf="@id/imgbtnManejo"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/campanas" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Animales"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/imageButton5"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton5"
+            app:layout_constraintTop_toTopOf="@id/imageButton5"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
