@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_calculadoras"
+            android:title="Calculadoras"
+            />
+        <item
+            android:id="@+id/menu_records"
+            android:title="Mis records"
+            />
+        <item
+            android:title="Recetas"
+            android:id="@+id/menu_recetas"
+            />
+        <item
+            android:title="Motivación"
+            android:id="@+id/menu_motivacion"
+            />
+        <item
+            android:title="Información"
+            android:id="@+id/menu_informacion"
+            />
+
+    </group>
+
+    <item android:title="Otras opciones">
+        <menu>
+            <item
+                android:title="Configuración"
+                android:id="@+id/menu_configuracion"
+                />
+
+
+        </menu>
+    </item>
+</menu>
