@@ -13,21 +13,21 @@ class Page2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_page2)
 
-        val btn1: Button = findViewById(R.id.btn1)
-        val btn2: Button = findViewById(R.id.btn2)
-        val btn3: Button = findViewById(R.id.btn3)
+        val peso: Button = findViewById(R.id.peso_calculo)
+        val rendimiento: Button = findViewById(R.id.rendimiento)
+        val forraje: Button = findViewById(R.id.forraje)
         val home: ImageButton = findViewById(R.id.home_btn)
         val imgbtnManejo: ImageButton = findViewById(R.id.imgbtnManejo)
 
-        btn1.setOnClickListener{
+        peso.setOnClickListener{
             val intent: Intent = Intent(this, PesoCalculo::class.java)
             startActivity(intent)
         }
-        btn2.setOnClickListener{
+        rendimiento.setOnClickListener{
             val intent: Intent = Intent(this, RendimientoCalculo::class.java)
             startActivity(intent)
         }
-        btn3.setOnClickListener{
+        forraje.setOnClickListener{
             val intent: Intent = Intent(this, CalculoForraje::class.java)
             startActivity(intent)
         }

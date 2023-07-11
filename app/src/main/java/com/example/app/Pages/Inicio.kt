@@ -15,7 +15,7 @@ class Inicio : AppCompatActivity() {
         val home: ImageButton = findViewById(R.id.home_btn)
 
         imgbtnManejo.setOnClickListener{
-            val intent: Intent = Intent(this, Manejo::class.java)
+            val intent: Intent = Intent(this, Page2::class.java)
             startActivity(intent)
         }
 

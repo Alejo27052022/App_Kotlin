@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,98 +8,63 @@
     tools:context=".Pages.Inicio">
 
     <LinearLayout
+        android:layout_width="416dp"
+        android:layout_height="49dp"
+        android:background="#4CAF50"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="59dp"
-        android:background="#53BF35"
-        android:orientation="horizontal"/>
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="71dp"
-        android:layout_gravity="bottom" >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <ImageButton
-            android:id="@+id/home_btn"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center|start"
-            android:layout_marginLeft="30dp"
-            android:layout_marginBottom="5dp"
-            android:background="#FFFFFF"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/casa" />
+            <ImageButton
+                android:id="@+id/imgbtnManejo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center|end"
+                android:background="#FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/barras"
+                tools:layout_editor_absoluteX="43dp"
+                tools:layout_editor_absoluteY="16dp" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center|start"
-            android:layout_marginLeft="31dp"
-            android:layout_marginBottom="5dp"
-            android:text="Home"
-            android:textSize="12sp" />
+            <ImageButton
+                android:id="@+id/home_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center|start"
+                android:background="#FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/casa"
+                tools:layout_editor_absoluteX="442dp"
+                tools:layout_editor_absoluteY="7dp" />
 
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center|start"
-            android:layout_marginLeft="130dp"
-            android:layout_marginBottom="5dp"
-            android:background="#FFFFFF"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/vacachica" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center|start"
+                android:text="Home"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="442dp" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center|end"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
-            android:text="Notificaciones"
-            android:textSize="12sp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <ImageButton
-            android:id="@+id/imgbtnManejo"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center|end"
-            android:layout_marginRight="130dp"
-            android:layout_marginBottom="5dp"
-            android:background="#FFFFFF"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/barras" />
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center"
-            android:layout_marginLeft="55dp"
-            android:layout_marginBottom="5dp"
-            android:text="Manejo"
-            android:textSize="12sp" />
-
-        <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center|end"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="5dp"
-            android:background="#FFFFFF"
-            app:srcCompat="@drawable/campanas" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center"
-            android:layout_marginRight="50dp"
-            android:layout_marginBottom="5dp"
-            android:text="Animales"
-            android:textSize="12sp" />
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
