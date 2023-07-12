@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">App</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
     <string name="vaca">Vaca</string>
     <string name="control_bovinium">Control Bovinium</string>
     <string name="calculo_de_peso_de_b_vinos">Calculo de peso de Bóvinos</string>
