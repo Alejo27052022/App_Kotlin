@@ -2,24 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
         <item
-            android:id="@+id/menu_calculadoras"
-            android:title="Calculadoras"
+            android:id="@+id/farmacologia"
+            android:title="Farmacología"
             />
         <item
-            android:id="@+id/menu_records"
-            android:title="Mis records"
+            android:id="@+id/nutricion"
+            android:title="Nutrición"
             />
         <item
-            android:title="Recetas"
-            android:id="@+id/menu_recetas"
+            android:title="Manejo"
+            android:id="@+id/Manejo"
             />
         <item
-            android:title="Motivación"
-            android:id="@+id/menu_motivacion"
-            />
-        <item
-            android:title="Información"
-            android:id="@+id/menu_informacion"
+            android:title="Reproduccion"
+            android:id="@+id/Reproduccion"
             />
 
     </group>

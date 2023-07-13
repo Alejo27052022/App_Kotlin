@@ -44,10 +44,10 @@ class Inicio : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId){
-            R.id.menu_calculadoras -> Toast.makeText(this, "Item 1", Toast.LENGTH_SHORT).show()
-            R.id.menu_records -> Toast.makeText(this, "Item 2", Toast.LENGTH_SHORT).show()
-            R.id.menu_configuracion -> Toast.makeText(this, "Item 3", Toast.LENGTH_SHORT).show()
-
+            R.id.farmacologia -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
+            R.id.nutricion -> Toast.makeText(this, "Nutricion", Toast.LENGTH_SHORT).show()
+            R.id.Manejo -> Toast.makeText(this, "Manejo", Toast.LENGTH_SHORT).show()
+            R.id.Reproduccion -> Toast.makeText(this, "Reproduccion", Toast.LENGTH_SHORT).show()
         }
 
         drawer.closeDrawer(GravityCompat.START)
