@@ -9,20 +9,55 @@
     android:background="#ECECEC"
     tools:context=".Pages.Inicio">
 
-    <include
-        layout="@layout/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
-        android:layout_height="match_parent"
         android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/header_navigation_drawer"
-        app:menu="@menu/nav_options"
-        android:layout_gravity="start"
+        app:menu="@menu/nav_options">
 
-        ></com.google.android.material.navigation.NavigationView>
+    </com.google.android.material.navigation.NavigationView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/home"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/casa" />
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
+
+

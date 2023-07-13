@@ -36,7 +36,7 @@ class Inicio : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeButtonEnabled(true)
 
-         val navigationView: NavigationView = findViewById(R.id.nav_view)
+        val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
 
     }
@@ -46,8 +46,14 @@ class Inicio : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
         when (item.itemId){
             R.id.farmacologia -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
             R.id.nutricion -> Toast.makeText(this, "Nutricion", Toast.LENGTH_SHORT).show()
-            R.id.Manejo -> Toast.makeText(this, "Manejo", Toast.LENGTH_SHORT).show()
+            R.id.Manejo -> {
+                val intent = Intent(this, Page2::class.java)
+                startActivity(intent)
+            }
+
             R.id.Reproduccion -> Toast.makeText(this, "Reproduccion", Toast.LENGTH_SHORT).show()
+
+
         }
 
         drawer.closeDrawer(GravityCompat.START)
