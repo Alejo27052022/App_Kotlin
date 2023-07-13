@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ECECEC"
-  >
+    >
 
     <!-- Primera sección (color verde) -->
     <LinearLayout
@@ -25,7 +25,8 @@
             android:layout_weight="1"
             android:textAlignment="center"
             android:textSize="30dp"
-            android:text="Buenas prácticas de ordeño" />
+            android:textStyle="bold"
+            android:text="Manejo" />
     </LinearLayout>
 
     <!-- Segunda sección (blanca con ScrollView) -->
@@ -33,7 +34,7 @@
     <!-- Tercera sección (contiene ImageButtons) -->
 
     <include
-        layout="@layout/ordeniotexto"
+        layout="@layout/manejadortxt"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/thirdSection"

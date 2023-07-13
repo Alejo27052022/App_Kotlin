@@ -14,109 +14,301 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Antes del ordeño"
+            android:textAlignment="center"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:padding="16dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Antes de comenzar el ordeño, es importante revisar los equipos mecánicos y aplicar prácticas higiénicas para prevenir problemas sanitarios en la ubre del animal."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:justificationMode="inter_word"
+            android:text="Antes de comenzar el ordeño, es importante revisar los equipos mecánicos y aplicar prácticas higiénicas para prevenir problemas sanitarios en la ubre del animal." />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Orden del ordeño "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Es importante llevar a las vacas a ordeñar en un solo lote y con tranquilidad para evitar golpes. Además, se debe planificar el orden del ordeño, comenzando por las vacas primerizas, seguidas por las viejas y, por último, las que tienen problemas."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ordenioorden" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manejo de los animales:"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text=" Para evitar problemas durante el ordeño y la contaminación de la leche, se recomienda utilizar una soga para atar los miembros posteriores de la vaca (conocida como 'manea')."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/amarra" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Utensilios limpios"
+            android:textStyle="bold"
             android:paddingHorizontal="16dp"
             android:paddingBottom="8dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Orden del ordeño: Es importante llevar a las vacas a ordeñar en un solo lote y con tranquilidad para evitar golpes. Además, se debe planificar el orden del ordeño, comenzando por las vacas primerizas, seguidas por las viejas y, por último, las que tienen problemas."
+            android:text="Se deben usar recipientes adecuados y limpios."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/recipiente" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Condición del ordeñador"
+            android:textStyle="bold"
             android:paddingHorizontal="16dp"
             android:paddingBottom="8dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Manejo de los animales: Para evitar problemas durante el ordeño y la contaminación de la leche, se recomienda utilizar una soga para atar los miembros posteriores de la vaca (conocida como 'manea')."
+            android:text="El ordeñador debe tener buena salud, usar ropa de protección limpia y lavarse las manos con agua y jabón antes y después del ordeño para evitar la contaminación de la leche."
             android:paddingHorizontal="16dp"
             android:paddingBottom="8dp" />
-
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/uniforme" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Utensilios limpios: Se deben usar recipientes adecuados y limpios."
+            android:text="Cortar el mechón de la cola"
+            android:textStyle="bold"
             android:paddingHorizontal="16dp"
             android:paddingBottom="8dp" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Condición del ordeñador: El ordeñador debe tener buena salud, usar ropa de protección limpia y lavarse las manos con agua y jabón antes y después del ordeño para evitar la contaminación de la leche."
+            android:text="La vaca utiliza la cola como un medio de defensa móvil y suele contaminarse con las heces, tierra y otros elementos, los cuales pueden llegar a la leche durante el ordeño."
             android:paddingHorizontal="16dp"
             android:paddingBottom="8dp" />
-
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/cola" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Cortar el mechón de la cola: La vaca utiliza la cola como un medio de defensa móvil y suele contaminarse con las heces, tierra y otros elementos, los cuales pueden llegar a la leche durante el ordeño."
+            android:text="Estimulación de la vaca"
+            android:textStyle="bold"
             android:paddingHorizontal="16dp"
             android:paddingBottom="8dp" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Estimulación de la vaca: Durante la estimulación de la vaca antes del ordeño, se llevan a cabo los siguientes procedimientos: traslado de las vacas al lugar del ordeño, limpieza de los pezones por parte del ordeñador, presencia cercana del ternero y el sonido de la máquina o utensilios de ordeño."
+            android:text="Durante la estimulación de la vaca antes del ordeño, se llevan a cabo los siguientes procedimientos: traslado de las vacas al lugar del ordeño, limpieza de los pezones por parte del ordeñador, presencia cercana del ternero y el sonido de la máquina o utensilios de ordeño."
             android:paddingHorizontal="16dp"
             android:paddingBottom="16dp" />
 
         <!-- Agrega el contenido durante el ordeño -->
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ternero" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Durante el Ordeño"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="20sp"
+            android:textAlignment="center"
             android:padding="16dp" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Inspección: Revisar la vaca, la ubre y el pezón, buscando marcas, lesiones o algún signo."
+            android:text="Inspección"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Revisar la vaca, la ubre y el pezón, buscando marcas, lesiones o algún signo."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/inspubre" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpieza"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar manualmente los excesos de estiércol seco o húmedo; recordar que las bacterias ni corren ni vuelan, sino nadan y que, por lo tanto, el exceso de agua favorece su desarrollo."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/limpiezaubre" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Despunte"
+            android:textStyle="bold"
             android:paddingHorizontal="16dp"
             android:paddingBottom="8dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Limpieza: Eliminar manualmente los excesos de estiércol seco o húmedo; recordar que las bacterias ni corren ni vuelan, sino nadan y que, por lo tanto, el exceso de agua favorece su desarrollo."
+            android:text="Consiste en eliminar el primer chorro de leche para desechar bacterias, y examinar la leche en un tazón de fondo oscuro."
             android:paddingHorizontal="16dp"
             android:paddingBottom="8dp" />
-
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/despunte" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Despunte: Consiste en eliminar el primer chorro de leche para desechar bacterias, y examinar la leche en un tazón de fondo oscuro."
+            android:text="Pre sello"
+            android:textStyle="bold"
             android:paddingHorizontal="16dp"
             android:paddingBottom="8dp" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Pre sello: Se recomienda el uso de un sustituto de agua para humedecer y remover partículas del pezón durante el ordeño. Es importante dejarlo actuar por al menos 10 segundos. Además, se deben lavar y desinfectar las manos antes del ordeño y preferiblemente usar guantes de goma."
+            android:text="Se recomienda el uso de un sustituto de agua para humedecer y remover partículas del pezón durante el ordeño. Es importante dejarlo actuar por al menos 10 segundos. Además, se deben lavar y desinfectar las manos antes del ordeño y preferiblemente usar guantes de goma."
             android:paddingHorizontal="16dp"
             android:paddingBottom="8dp" />
-
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/presello" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Colocación y alineamiento de pezoneras: Se colocan las pezoneras alrededor de un minuto después de eliminar los primeros chorros. Al colocar las pezoneras, se doblan los tubos de estas para que no entre aire."
+            android:text="Colocación y alineamiento de pezoneras"
+            android:textStyle="bold"
             android:paddingHorizontal="16dp"
             android:paddingBottom="8dp" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Retiro de pezoneras: Para evitar el sobre ordeño, se debe cortar el vacío y no hacer apoyo al retirar las pezoneras. Es importante cerrar la fuente de vacío antes de retirar la unidad y aplicar un sellador en los pezones para prevenir la proliferación de bacterias y proteger la piel."
+            android:text="Se colocan las pezoneras alrededor de un minuto después de eliminar los primeros chorros. Al colocar las pezoneras, se doblan los tubos de estas para que no entre aire."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/colocacionpezo" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retiro de pezoneras"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para evitar el sobre ordeño, se debe cortar el vacío y no hacer apoyo al retirar las pezoneras. Es importante cerrar la fuente de vacío antes de retirar la unidad y aplicar un sellador en los pezones para prevenir la proliferación de bacterias y proteger la piel."
             android:paddingHorizontal="16dp"
             android:paddingBottom="16dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/retiropezo" />
 
         <!-- Agrega el contenido después del ordeño -->
         <TextView
@@ -124,29 +316,76 @@
             android:layout_height="wrap_content"
             android:text="Después del ordeño"
             android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:padding="16dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesado, registro y filtrado"
+            android:textStyle="bold"
             android:textSize="16sp"
             android:padding="16dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Pesado, registro y filtrado: En primer lugar, pesar la cantidad de leche ordeñada en cada vaca. Anotar la producción de leche en un cuaderno. Filtrar la leche, utilizando una tela blanca para evitar el paso de impurezas."
+            android:text="En primer lugar, pesar la cantidad de leche ordeñada en cada vaca. Anotar la producción de leche en un cuaderno. Filtrar la leche, utilizando una tela blanca para evitar el paso de impurezas."
             android:paddingHorizontal="16dp"
             android:paddingBottom="8dp" />
-
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/filtrado" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Transporte al tanque de enfriamiento: La leche es un producto sumamente perecible y muy adecuado para el crecimiento microbiano. Por eso, debe ser enfriada cuanto antes (máx. 1/2 hora después del ordeño). El tanque de enfriamiento se encuentra a 4°C disminuyendo la contaminación de la leche."
-            android:paddingHorizontal="16dp"
-            android:paddingBottom="8dp" />
-
+            android:text="Transporte al tanque de enfriamiento"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="16dp" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="• Limpieza de utensilios: Los utensilios deben ser lavados inmediatamente después del ordeño con agua caliente y con algún desinfectante. Enjuagar bien y secar hasta el día siguiente."
+            android:text="La leche es un producto sumamente perecible y muy adecuado para el crecimiento microbiano. Por eso, debe ser enfriada cuanto antes (máx. 1/2 hora después del ordeño). El tanque de enfriamiento se encuentra a 4°C disminuyendo la contaminación de la leche."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/tanque" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpieza de utensilios"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="16dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Los utensilios deben ser lavados inmediatamente después del ordeño con agua caliente y con algún desinfectante. Enjuagar bien y secar hasta el día siguiente."
             android:paddingHorizontal="16dp"
             android:paddingBottom="16dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/limpiezauten" />
 
     </LinearLayout>
 

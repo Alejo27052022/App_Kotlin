@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <!-- Agrega el contenido antes del ordeño -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="1. Conocer las pautas del comportamiento bovino ayuda a disminuir el estrés del animal y a mejorar su rendimiento."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="2. Saber cómo se comporta el ganado también ayuda a detectar enfermedades en etapas tempranas"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="3. El conocimiento del comportamiento bovino facilita su manejo y limitar el tamaño de los grupos en los rodeos evita problemas de jerarquía."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="4. Conocer las pautas de comportamiento permite un trato adecuado, lo que aumenta la producción de leche."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="5. Saber cómo se comporta el ganado es útil para mejorar el campo, evitando el retorno al monte, sembrando especies adecuadas y utilizando la bosta como fertilizante.
+
+"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/comporta" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comportamiento individual"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="El comportamiento individual de los animales es importante para su bienestar y se compone de: "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="1.Reactividad, que permite al animal escapar de situaciones perjudiciales y mantener su seguridad."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="2. Ingestión, que sigue pautas de pastoreo diurno en bovinos, con periodos de rumia, descanso y consumo de agua."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="3. Exploración, ya que los bovinos tienden a investigar y familiarizarse con su entorno."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/individuo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comportamiento social"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="La estabilidad en las relaciones del grupo de rodeo depende del reconocimiento entre sus miembros, que se determina por factores como raza, tamaño, edad, cuernos y sexo. Además, los bovinos tienen una relación con los humanos, que influye en sus reacciones sociales."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/social" />
+
+
+    </LinearLayout>
+
+</ScrollView>

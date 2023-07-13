@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <!-- Agrega el contenido antes del ordeño -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pastoreo continuo "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="El pastoreo continuo es un sistema de pastoreo en el que los animales permanecen en un mismo potrero durante un período prolongado de tiempo sin ser movidos a otros potreros. Este sistema es utilizado en pastos naturales con poca producción y crecimiento, pero puede tener impactos negativos en la calidad del forraje y la salud de los animales si no se maneja adecuadamente."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/continuo" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pastoreo Rotacional "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="El pastoreo rotacional es un sistema de pastoreo en el que los animales se mueven de un potrero a otro en un patrón preestablecido para permitir que los pastos descansen y se recuperen. Este sistema ayuda a mejorar la calidad del forraje, aumentar la producción animal y reducir los impactos negativos en el medio ambiente."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/rotativo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pastoreo Diferido "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="El sistema consiste en dejar algunos potreros en descanso para usarlos durante la época seca, y se puede conservar el pasto en el campo para ser utilizado como heno. La desventaja es que el pasto puede perder valor nutricional antes de que los animales lo consuman."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/diferido" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pastoreo Cero "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Este sistema implica confinar el ganado y cortar el pasto para su alimentación. Requiere construcciones, equipo de cosecha y suficiente agua. Es rentable si se tienen los recursos y especialmente para la producción de leche."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/cero" />
+
+
+    </LinearLayout>
+
+</ScrollView>

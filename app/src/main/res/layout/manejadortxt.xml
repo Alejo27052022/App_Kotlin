@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <!-- Agrega el contenido antes del ordeño -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carga animal "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Es el número de animales por unidad de superficie. Se lo puede expresar como cabezas por hectárea o equivalente vaca por hectárea."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/carga" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajuste de carga animal"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Este procedimiento determina periódicamente la cantidad de animales que el campo puede soportar. Incluye ajustar la carga según el sistema productivo, como vender terneros en cría o comprar terneros en invernada, y redefinir la carga en función de cambios ambientales, pastizales y producción animal."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ajuste" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capacidad de carga"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="La capacidad de carga de un campo o potrero está determinada por la productividad de forraje del pastizal, su composición botánica y su estado o condición."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/capacidad" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Presión de pastoreo"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Este sistema implica confinar el ganado y cortar el pasto para su alimentación. Requiere construcciones, equipo de cosecha y suficiente agua. Es rentable si se tienen los recursos y especialmente para la producción de leche."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/presion" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Asignación de forraje"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Es la cantidad de forraje que se asigna por animal y por unidad de tiempo"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/asignacion" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <!-- Agrega el contenido antes del ordeño -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="El bienestar animal se compone de tres elementos: el adecuado funcionamiento del organismo, el estado emocional del animal y la posibilidad de expresar conductas normales de la especie. La Organización Mundial de la Salud Animal define el bienestar animal como la ausencia de dolor, miedo o distrés, junto con un estado de salud satisfactorio y capacidad para expresar comportamientos innatos. Los protocolos Welfare Quality® valoran el bienestar animal en cuatro aspectos."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alimentación  "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="• Ausencia de hambre prolongada. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="• Ausencia de sed prolongada.  "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/alimentación" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alojamiento "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="• Confort en relación al descanso. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="• Confort térmico. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="• Facilidad de movimiento. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/alojamiento" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado sanitario "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="• Ausencia de lesiones. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="• Ausencia de enfermedad. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="• Ausencia de dolor causado por prácticas de manejo tales como la castración, el corte de cola, el descornado, etc. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/estado" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LAS CINCO LIBERTADES "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="• El animal no sufre sed, hambre ni malnutrición, porque tiene acceso a agua de bebida y se le suministra una dieta adecuada a sus necesidades. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="• El animal no sufre estrés físico ni térmico, porque se le proporciona un ambiente adecuado, incluyendo refugio frente a las inclemencias climáticas y un área de descanso cómoda. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="• El animal no sufre dolor, lesiones ni enfermedades, gracias a una prevención adecuada y/o a un diagnóstico y tratamiento rápidos. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="• El animal es capaz de mostrar la mayoría de sus patrones normales de conducta, porque se le proporciona el espacio necesario y las instalaciones adecuadas, y se aloja en compañía de otros individuos de su especie. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="• El animal no experimenta miedo ni distrés, porque se garantizan las condiciones necesarias para evitar el sufrimiento mental"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/feliz" />
+
+
+    </LinearLayout>
+
+</ScrollView>

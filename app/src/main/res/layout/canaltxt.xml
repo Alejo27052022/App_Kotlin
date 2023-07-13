@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <!-- Agrega el contenido antes del ordeño -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="La canal es el cuerpo de los animales ya sea bovinos, caprinos o porcinos, después de ser sacrificados, el cual consiste en una serie de procesos que son los siguientes: recepción, arreo, duchado, noqueo, izado, sangrado, degüello, remoción de cuernos, orejas, patas, cabeza, genitales, cuero, desollado, eviscerado, fisurado e inspección post morten."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Razas bovinas y su rendimiento en canal"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aberdeen Angus "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Características "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Originados  en Escocia (Gran Bretaña), por lo general, son de color negro y rojo ladrillo entero con carácter dócil, cabeza de tamaño medio, sin cuernos, frente ancha, cuerpo largo, lomo recto y amplio, cuartos traseros musculosos, aplomos cortos, estos bovinos presenta instintos maternales con una producción de leche muy buena. El rendimiento a la canal de bovinos Aberdeen Angus varía entre 65 y 70 porciento con un peso promedio de los terneros al nacer de 38 kilos, mientras que el peso de la vaca es de 600 a 650 Kilos y los toros con un peso de 850 a 1000 kilos."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/angus" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Brahmán "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:text="Características "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="La raza Brahmán Americana es el resultado de bovinos importados a Estados Unidos desde la India donde son considerados como sagrados.  Los bovinos Brahmán son de tamaño grande, su cabeza es ancha, ojos negros achinados que están protegidos por las arrugas de su propia piel, orejas de tamaño mediano, cuello corto y grueso, cachos gruesos y cortos, giba con forma de riñón, las hembras adultas alcanzan los 550 kilos mientras que los toros superan los 1.000 kilos con rendimientos a la canal entre 58 a 65 por ciento."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/Brahmán" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Charoláis "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"
+            android:text="Características"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Los bovinos Charoláis son originarios de Francia en una provincia que lleva el mismo nombre, son animales robustos, su pelaje cambia de tamaño de acuerdo a las estaciones del año en verano es más corto que en invierno, los colores que predominan es el blanco o blanco cremoso, cuerpo ancho y profundo, ancas separadas, cabeza con frente ancha y levemente hundida, orejas finas, ojos grandes, cuernos médianos, los machos adulto pesan entre 900 y 1.125 kilos y las hembras adultas de 560 y 950 kilos, rendimiento a la canal 58 a 63% "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/Charoláis" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hereford"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"
+            android:text="Características"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Los bovinos de raza Hereford son de tamaño mediano a grande, una de las características que más resalta en esta raza es el color de su piel, que van desde el rojo claro hasta el rojo oscuro, con una tonalidad blanca en la cara, cuello, pecho, abdomen, rodillas y corvejones, son animales precoces que alcanzan pesos entre 550 y 650 kilos en vacas adultas y los toros adultos entre 900 y 1.100 kilos con un rendimiento del 60 por ciento. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/hereford" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limousin"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"
+            android:text="Características"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Los bovinos de raza Limousin, son animales rústicos productores de carne, cuello corto y vigoroso, cabeza con tamaño medio, pelaje de color amarillo a rojo brillante, el peso de los toretes esta entre los 700 a 900 kilos, el de las vacas es menor y está entre los 500 a 600 kilos, con rendimientos del 55 al 58 por ciento. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/Limousin" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nelore"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"
+            android:text="Características"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Es considerada como una raza rústica y precoz con cuernos más pequeños ante las demás razas cebuinas, los cuernos en los toros son puntiagudos, en las vacas un poco inclinado hacia atrás, cabeza fina, ojos grandes en forma elíptica, orejas de porte medio, cuello corto y rechoncho, su papada es bien notoria la misma que inicia en la garganta y terminando a la entrada del pecho, también posee una giba bien defina que tiene forma de riñón, los toros adultos tienen pesos mayores a los 1.000 kilos, mientras que las vacas alcanzan los 550 a 600 kilos."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/Nelore" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brown Swiss "
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"
+            android:text="Características"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Son bovinos de pelaje café oscuro pero sus ojos, moro y ubre tienden a tener un color más claro, cabeza ancha con cuernos pequeños, lomo ancho, pecho profundo, costillares arqueados, patas pequeñas pero fuertes, las vacas alcanzan pesos de 600 a 700 kilos, pero los machos de 950 a 1.000 kilos. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/BrownSwiss" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Holstein"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"
+            android:text="Características"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="El Holstein es originario de Holanda son animales grandes, por lo que los toros alcanzan la altura de la cruz un metro y sesenta centímetros, seguidos por las vacas con un metro y cincuenta centímetros, el peso de los toros Holstein rodea los 900 a 1.100 kilos, las vacas van de 600 a 700 kilos, su cabeza es grande pero descarnada en comparación con otras razas, orejas paradas, ojos y ollares grandes con morro fuerte, cogote largo pero descarnado, cruz angulosa, las vértebras sobresalen a la paleta, los huesos de las costillas son largos planos y fuertes, muslos con una apariencia recta o levemente curva, cuando se juzga al animal de costado pero al observar de atrás se puede ver que están separados entre sí, ubre de gran capacidad, patas fuertes y tendones bien definidos con pezuñas cortas ligeramente separadas, piel y pelo fino, overo blanco y negro, también hay combinaciones con el blanco y rojo. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/Holstein" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normado"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"
+            android:text="Características"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="La Raza Normanda está implantada desde hace más de 100 años en América Latina; a Colombia llegó en 1.877, a Brasil y Uruguay llegó a principios del siglo XX y más recientemente a Argentina, Ecuador Paraguay, Venezuela .Son bovinos de tamaño medio, considerado como raza de doble propósito su cuerpo es grande con pelaje blanco y manchas de color atigrada. "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/Normado" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jersey"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"
+            android:text="Características"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Es de origen británico con cuernos cortos y puntas negras, sus miembros son delgados y pesuñas oscuras, con una ubre bien desarrollada y buena conformación, el pelo de la cabeza y patas tiende hacer un color ratón, mientras que, el cuerpo es bayo arratonado, el pelaje de los toros por lo general es más oscuro, las mucosas de estos bovinos son de color negro o gris pizarro oscuro, se caracterizan por ser animales pequeños considerados como animales rústicos, con facilidad al parto buena productora de leche. Las vacas pesan entre 300 a 400 kilogramos y los toros llegan a 500 kilogramos "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/Jersey" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jersey"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:textStyle="bold"
+            android:text="Características"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Los bovinos de Lidia son animales que no poseen un prototipo definido para todas las razas, siendo el único denominador la acometividad de los ejemplares, dentro de esta raza se encuentran las castas y encastas, estos animales tienen características comunes que los diferencian de los demás animales de la misma raza como el dimorfismo sexual, los toros son de forma redonda con mayor desarrollo muscular, en cambio las vacas presentan una formación más angulosa.  "
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/Lidia" />
+
+
+    </LinearLayout>
+
+</ScrollView>
