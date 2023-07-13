@@ -2,20 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
         <item
-            android:id="@+id/farmacologia"
-            android:title="Farmacología"
+            android:id="@+id/farmacologia_option"
+            android:title="Farmacologia"
             />
         <item
-            android:id="@+id/nutricion"
-            android:title="Nutrición"
+            android:id="@+id/nutricion_option"
+            android:title="Nutricion"
             />
         <item
+            android:id="@+id/manejo_option"
             android:title="Manejo"
-            android:id="@+id/Manejo"
             />
         <item
+            android:id="@+id/reproduccion_option"
             android:title="Reproduccion"
-            android:id="@+id/Reproduccion"
             />
 
     </group>

@@ -27,7 +27,7 @@ class PesoCalculo : AppCompatActivity() {
         }
 
         imgbtnManejo.setOnClickListener{
-            val intent: Intent = Intent(this, Page2::class.java)
+            val intent: Intent = Intent(this, Manejo::class.java)
             startActivity(intent)
         }
 
