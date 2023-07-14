@@ -14,18 +14,18 @@
 
         <activity
             android:name=".Pages.Inicio"
-            android:exported="true"/>
+            android:exported="false"/>
         <activity
             android:name=".Pages.RendimientoCalculo"
-            android:exported="true"/>
+            android:exported="false"/>
         <activity android:name=".Pages.manijo"
             android:exported="false"/>
         <activity
             android:name=".Pages.PesoCalculo"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".Pages.Manejo"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".Pages.IndexPage"
             android:exported="true">
