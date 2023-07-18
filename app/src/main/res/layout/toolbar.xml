@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E3E3E3"
+    android:foregroundTint="#FFFFFF"
     android:elevation="4dp"
     tools:context=".Pages.Inicio">
 
@@ -18,8 +19,10 @@
             android:id="@+id/toolbar_main"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#4CAF50"
+            android:background="#138A36"
+            android:foregroundTint="#FFFFFF"
             app:layout_scrollFlags="scroll|enterAlways" />
+
 
     </com.google.android.material.appbar.AppBarLayout>
 

@@ -56,6 +56,13 @@
         app:headerLayout="@layout/header_navigation_drawer"
         app:menu="@menu/nav_options">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#138A36"
+            android:layout_gravity="bottom"
+            />
+
     </com.google.android.material.navigation.NavigationView>
 
 
