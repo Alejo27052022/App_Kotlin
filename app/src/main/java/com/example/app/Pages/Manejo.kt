@@ -13,6 +13,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.app.R
 import com.google.android.material.navigation.NavigationView
+import de.hdodenhof.circleimageview.CircleImageView
 
 class Manejo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -25,6 +26,23 @@ class Manejo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
 
         val toolbar : Toolbar = findViewById(R.id.toolbar_main)
         setSupportActionBar(toolbar)
+
+        val peso: CircleImageView = findViewById(R.id.peso_image)
+        val canal: CircleImageView = findViewById(R.id.carne_image)
+        val forraje: CircleImageView = findViewById(R.id.forraje_image)
+
+        peso.setOnClickListener{
+            val intent = Intent(this, PesoCalculo::class.java)
+            startActivity(intent)
+        }
+        canal.setOnClickListener{
+            val intent = Intent(this, RendimientoCalculo::class.java)
+            startActivity(intent)
+        }
+        forraje.setOnClickListener{
+            val intent = Intent(this, Forraje::class.java)
+            startActivity(intent)
+        }
 
         drawer = findViewById(R.id.drawer_layout)
         toggle = ActionBarDrawerToggle(this,drawer,toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
