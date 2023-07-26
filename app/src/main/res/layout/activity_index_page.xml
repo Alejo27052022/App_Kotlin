@@ -5,7 +5,7 @@
     android:id="@+id/frame_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00C040"
+    android:background="#138A36"
     tools:context=".Pages.IndexPage">
 
     <ImageView
