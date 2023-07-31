@@ -4,9 +4,7 @@ import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.MenuItem
-import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
@@ -14,7 +12,6 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.app.R
 import com.google.android.material.navigation.NavigationView
-import com.google.android.material.navigation.NavigationView.OnNavigationItemSelectedListener
 
 
 class Inicio : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener{
@@ -36,7 +33,7 @@ class Inicio : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeButtonEnabled(true)
 
-         val navigationView: NavigationView = findViewById(R.id.nav_view)
+        val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
 
     }
@@ -44,12 +41,22 @@ class Inicio : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId){
-            R.id.menu_calculadoras -> Toast.makeText(this, "Item 1", Toast.LENGTH_SHORT).show()
-            R.id.menu_records -> Toast.makeText(this, "Item 2", Toast.LENGTH_SHORT).show()
-            R.id.menu_configuracion -> Toast.makeText(this, "Item 3", Toast.LENGTH_SHORT).show()
+            R.id.home_option -> {
+                val intent = Intent(this, Inicio::class.java)
+                startActivity(intent)
+            }
+            R.id.farmacologia_option -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
+            R.id.nutricion_option -> Toast.makeText(this, "Nutricion", Toast.LENGTH_SHORT).show()
+            R.id.manejo_option -> {
+                val intent = Intent(this, Manejo::class.java)
+                startActivity(intent)
+
+            }
+
+            R.id.reproduccion_option -> Toast.makeText(this, "Reproduccion", Toast.LENGTH_SHORT).show()
+
 
         }
-
         drawer.closeDrawer(GravityCompat.START)
         return true
     }

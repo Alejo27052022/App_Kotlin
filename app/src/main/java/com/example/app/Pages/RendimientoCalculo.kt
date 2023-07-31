@@ -1,20 +1,32 @@
 package com.example.app.Pages
 
 import android.content.Intent
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.widget.Toolbar
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import com.example.app.R
 import com.example.app.databinding.ActivityRendimientoCalculoBinding
+import com.google.android.material.navigation.NavigationView
 
-class RendimientoCalculo : AppCompatActivity() {
+class RendimientoCalculo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
+    private lateinit var drawer: DrawerLayout
+    private lateinit var toggle: ActionBarDrawerToggle
     private lateinit var binding: ActivityRendimientoCalculoBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRendimientoCalculoBinding.inflate(layoutInflater)
@@ -30,20 +42,26 @@ class RendimientoCalculo : AppCompatActivity() {
 
         /* Variables de los botones */
         val btn_calcular : Button = findViewById(R.id.btn_calcular)
-        val home: ImageButton = findViewById(R.id.home_btn)
-        val imgbtnManejo: ImageButton = findViewById(R.id.imgbtnManejo)
 
         /* Button Calcular */
         btn_calcular.setOnClickListener{Calcular()}
 
-        /* Direccionamiento de paginas */
-        home.setOnClickListener{
-            val intent: Intent = Intent(this, Inicio::class.java)
-            startActivity(intent)
-        }
+        val toolbar : Toolbar = findViewById(R.id.toolbar_main)
+        setSupportActionBar(toolbar)
 
-        imgbtnManejo.setOnClickListener{
-            val intent: Intent = Intent(this, Page2::class.java)
+        drawer = findViewById(R.id.drawer_layout)
+        toggle = ActionBarDrawerToggle(this,drawer,toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
+        drawer.addDrawerListener(toggle)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeButtonEnabled(true)
+
+        val navigationView: NavigationView = findViewById(R.id.nav_view)
+        navigationView.setNavigationItemSelectedListener(this)
+
+        val regresar : ImageView = findViewById(R.id.regresar)
+        regresar.setOnClickListener{
+            val intent = Intent(this, Manejo::class.java)
             startActivity(intent)
         }
 
@@ -68,14 +86,14 @@ class RendimientoCalculo : AppCompatActivity() {
                 if(sexo == "Macho"){
                     var rendimiento_libra: Double = (((70.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((70.00/100) * peso)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
                 }
                 else if (sexo == "Hembra"){
                     var rendimiento_libra: Double = (((65.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((65.00/100) * peso)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
                 }
             }
 
@@ -83,14 +101,14 @@ class RendimientoCalculo : AppCompatActivity() {
                 if(sexo == "Macho"){
                     var rendimiento_libra: Double = (((65.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((65.00/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
                 }
                 else if (sexo == "Hembra"){
                     var rendimiento_libra: Double = (((58.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((58.00/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
 
                 }
             }
@@ -99,14 +117,14 @@ class RendimientoCalculo : AppCompatActivity() {
                 if(sexo == "Macho"){
                     var rendimiento_libra: Double = (((63.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((63.00/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
                 }
                 else if (sexo == "Hembra"){
                     var rendimiento_libra: Double = (((58.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((58.00/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
 
                 }
             }
@@ -115,14 +133,14 @@ class RendimientoCalculo : AppCompatActivity() {
                 if(sexo == "Macho"){
                     var rendimiento_libra: Double = (((60.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((60.00/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
                 }
                 else if (sexo == "Hembra"){
                     var rendimiento_libra: Double = (((58.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((58.00/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
 
                 }
 
@@ -132,14 +150,14 @@ class RendimientoCalculo : AppCompatActivity() {
                 if(sexo == "Macho"){
                     var rendimiento_libra: Double = (((58.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((58.00/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
                 }
                 else if (sexo == "Hembra"){
                     var rendimiento_libra: Double = (((55.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((55.00/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
 
                 }
             }
@@ -148,14 +166,14 @@ class RendimientoCalculo : AppCompatActivity() {
                 if(sexo == "Macho"){
                     var rendimiento_libra: Double = (((54.60/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((54.60/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
                 }
                 else if (sexo == "Hembra"){
                     var rendimiento_libra: Double = (((50.80/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((50.80/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
 
                 }
             }
@@ -164,14 +182,14 @@ class RendimientoCalculo : AppCompatActivity() {
                 if(sexo == "Macho"){
                     var rendimiento_libra: Double = (((51.29/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((51.29/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
                 }
                 else if (sexo == "Hembra"){
                     var rendimiento_libra: Double = (((51.29/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((51.29/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
 
                 }
             }
@@ -180,14 +198,14 @@ class RendimientoCalculo : AppCompatActivity() {
                 if(sexo == "Macho"){
                     var rendimiento_libra: Double = (((56.41/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((56.41/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
                 }
                 else if (sexo == "Hembra"){
                     var rendimiento_libra: Double = (((56.07/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((56.07/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
 
                 }
             }
@@ -196,14 +214,14 @@ class RendimientoCalculo : AppCompatActivity() {
                 if(sexo == "Macho"){
                     var rendimiento_libra: Double = (((56.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((56.00/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
                 }
                 else if (sexo == "Hembra"){
                     var rendimiento_libra: Double = (((55.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((55.00/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
 
                 }
             }
@@ -212,14 +230,14 @@ class RendimientoCalculo : AppCompatActivity() {
                 if(sexo == "Macho"){
                     var rendimiento_libra: Double = (((63.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((63.00/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
                 }
                 else if (sexo == "Hembra"){
                     var rendimiento_libra: Double = (((55.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((55.00/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
 
                 }
             }
@@ -228,18 +246,58 @@ class RendimientoCalculo : AppCompatActivity() {
                 if(sexo == "Macho"){
                     var rendimiento_libra: Double = (((62.45/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((62.45/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
                 }
                 else if (sexo == "Hembra"){
                     var rendimiento_libra: Double = (((58.00/100) * peso) * 2.20462)
                     var rendimiento_kilo: Double = ((58.00/100) * peso)
-                    resultado_libra.text = (" Peso en Libras es " + rendimiento_libra)
-                    resultado_kilo.text = ("Peso en Kilogramos es " + rendimiento_kilo)
+                    resultado_kilo.text = String.format("%.2f",rendimiento_kilo)
+                    resultado_libra.text = String.format("%.2f",rendimiento_libra)
 
                 }
             }
 
         }
+    }
+
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId){
+            R.id.home_option -> {
+                val intent = Intent(this, Inicio::class.java)
+                startActivity(intent)
+            }
+            R.id.farmacologia_option -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
+            R.id.nutricion_option -> Toast.makeText(this, "Nutricion", Toast.LENGTH_SHORT).show()
+            R.id.manejo_option -> {
+                val intent = Intent(this, Manejo::class.java)
+                startActivity(intent)
+
+            }
+
+            R.id.reproduccion_option -> Toast.makeText(this, "Reproduccion", Toast.LENGTH_SHORT).show()
+
+
+        }
+        drawer.closeDrawer(GravityCompat.START)
+        return true
+    }
+
+    override fun onPostCreate(savedInstanceState: Bundle?) {
+        super.onPostCreate(savedInstanceState)
+        toggle.syncState()
+    }
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        toggle.onConfigurationChanged(newConfig)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(toggle.onOptionsItemSelected(item)){
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
