@@ -5,41 +5,44 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.App"
         tools:targetApi="31">
 
         <activity
+            android:name=".Pages.Section_Forraje"
+            android:label=""
+            android:exported="false"/>
+        <activity
             android:name=".Pages.Inicio"
             android:exported="false"
+            android:label=""
             android:screenOrientation="fullUser"/>
         <activity
             android:name=".Pages.RendimientoCalculo"
-            android:exported="false"/>
-        <activity android:name=".Pages.manijo"
+            android:label=""
             android:exported="false"/>
         <activity
             android:name=".Pages.PesoCalculo"
+            android:label=""
             android:exported="false" />
         <activity
             android:name=".Pages.Manejo"
+            android:label=""
             android:exported="false" />
         <activity
             android:name=".Pages.IndexPage"
+            android:label=""
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

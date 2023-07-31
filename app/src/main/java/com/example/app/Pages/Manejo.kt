@@ -5,15 +5,14 @@ import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.app.R
 import com.google.android.material.navigation.NavigationView
-import de.hdodenhof.circleimageview.CircleImageView
 
 class Manejo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -27,9 +26,9 @@ class Manejo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
         val toolbar : Toolbar = findViewById(R.id.toolbar_main)
         setSupportActionBar(toolbar)
 
-        val peso: CircleImageView = findViewById(R.id.peso_image)
-        val canal: CircleImageView = findViewById(R.id.carne_image)
-        val forraje: CircleImageView = findViewById(R.id.forraje_image)
+        val peso: ConstraintLayout = findViewById(R.id.Peso_Calculo)
+        val canal: ConstraintLayout = findViewById(R.id.Rendimiento_Canal)
+        val section_forager: ConstraintLayout = findViewById(R.id.Section_forr)
 
         peso.setOnClickListener{
             val intent = Intent(this, PesoCalculo::class.java)
@@ -39,8 +38,8 @@ class Manejo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
             val intent = Intent(this, RendimientoCalculo::class.java)
             startActivity(intent)
         }
-        forraje.setOnClickListener{
-            val intent = Intent(this, Forraje::class.java)
+        section_forager.setOnClickListener{
+            val intent = Intent(this, Section_Forraje::class.java)
             startActivity(intent)
         }
 
@@ -53,18 +52,15 @@ class Manejo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
 
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
-
-        val home : ImageButton = findViewById(R.id.home)
-        home.setOnClickListener{
-            val intent = Intent(this, Inicio::class.java)
-            startActivity(intent)
-        }
-
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId){
+            R.id.home_option -> {
+                val intent = Intent(this, Inicio::class.java)
+                startActivity(intent)
+            }
             R.id.farmacologia_option -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
             R.id.nutricion_option -> Toast.makeText(this, "Nutricion", Toast.LENGTH_SHORT).show()
             R.id.manejo_option -> {

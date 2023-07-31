@@ -6,7 +6,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ECECEC"
+    android:background="#FDF9F9"
     tools:context=".Pages.Manejo">
 
     <LinearLayout
@@ -18,13 +18,13 @@
         <include
             layout="@layout/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="107dp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.6"
-            android:background="#FFFFFF">
+            android:layout_weight="0.5"
+            android:background="#FDF9F9">
 
             <TextView
                 android:id="@+id/textView"
@@ -37,15 +37,15 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintHorizontal_bias="0.089"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.038" />
+                app:layout_constraintVertical_bias="0.034" />
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/shapeableImageView"
-                android:layout_width="350dp"
-                android:layout_height="300dp"
+                android:layout_width="@dimen/width_image_manejo"
+                android:layout_height="@dimen/height_image_manejo"
                 android:layout_margin="5dp"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
@@ -55,130 +55,148 @@
                 app:layout_constraintHorizontal_bias="0.491"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.273"
+                app:layout_constraintVertical_bias="0.252"
                 app:shapeAppearanceOverlay="@style/roundimageview" />
 
             <TextView
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:layout_width="343dp"
+                android:layout_height="90dp"
                 android:justificationMode="inter_word"
                 android:text="El manejo de bovinos se refiere a todas las prácticas y procedimientos utilizados para criar, cuidar y gestionar eficientemente el ganado bovino, con el objetivo de garantizar su bienestar, salud y productividad en beneficio de la industria ganadera."
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.875" />
+                app:layout_constraintVertical_bias="0.862" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculo"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.089"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.992" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:layout_weight="0.4">
+            android:layout_weight="0.5">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/peso_image"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@drawable/peso_calculo"
-                app:civ_border_color="@color/black"
-                app:civ_border_width="1dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.137"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Peso_Calculo"
+                android:layout_width="@dimen/width_section"
+                android:layout_height="@dimen/height_section"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundend_background">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/carne_image"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@drawable/carne"
-                app:civ_border_color="@color/black"
-                app:civ_border_width="1dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/peso_calculo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/forraje_image"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@drawable/forraje"
-                app:civ_border_color="@color/black"
-                app:civ_border_width="1dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.853"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Peso Calculo"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.817"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:layout_width="92dp"
-                android:layout_height="20dp"
-                android:text="Peso Calculo"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="14dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.115"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.327" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rendimiento Canal"
-                android:textColor="@color/black"
-                android:textSize="14dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.33" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Forraje"
-                android:textColor="@color/black"
-                android:textSize="14dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.831"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.33" />
-
-            <ImageButton
-                android:id="@+id/home"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Rendimiento_Canal"
+                android:layout_width="@dimen/width_section"
+                android:layout_height="@dimen/height_section"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:background="#FFFFFF"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0"
-                app:srcCompat="@drawable/casa" />
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundend_background">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/carne"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.985"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rendimiento Canal"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.116"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.507" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Section_forr"
+                android:layout_width="@dimen/width_section"
+                android:layout_height="@dimen/height_section"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/roundend_background">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/forraje"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.069"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forraje"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.784"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
     </LinearLayout>
 
 
@@ -199,6 +217,5 @@
             />
 
     </com.google.android.material.navigation.NavigationView>
-
 
 </androidx.drawerlayout.widget.DrawerLayout>

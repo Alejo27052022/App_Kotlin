@@ -304,8 +304,24 @@ fun CalculoCanal(){
     }
 }
 
+fun Calcular(){
+    val constante_animal = 400;
+    print("Ingrese las unidades de animal de novillo: ")
+    val novillo = readLine()?.toFloatOrNull() ?: 0.0f
+    print("Ingrese el peso del animal")
+    val peso = readLine()?.toFloatOrNull()?: 0.0f
+    print("Ingrese las hectareas")
+    val hectareas = readLine()?.toFloatOrNull()?: 0.0f
 
+    val res_un_animal = (peso/constante_animal)
+    println(res_un_animal)
+
+    val res_hec_animal = (res_un_animal * novillo)/hectareas
+    println(res_hec_animal)
+
+}
 fun main(){
-    CalculoCanal();
-    calcularPeso();
+    Calcular();
+    //CalculoCanal();
+    //calcularPeso();
 }

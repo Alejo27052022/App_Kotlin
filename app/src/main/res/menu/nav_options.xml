@@ -2,32 +2,30 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
         <item
+            android:id="@+id/home_option"
+            android:title="Home"
+            android:icon="@drawable/icon_home"
+            />
+        <item
             android:id="@+id/farmacologia_option"
             android:title="Farmacologia"
+            android:icon="@drawable/icon_farmacologia"
             />
         <item
             android:id="@+id/nutricion_option"
             android:title="Nutricion"
+            android:icon="@drawable/icon_nutricion"
             />
         <item
             android:id="@+id/manejo_option"
             android:title="Manejo"
+            android:icon="@drawable/icon_manejo"
             />
         <item
             android:id="@+id/reproduccion_option"
             android:title="Reproduccion"
+            android:icon="@drawable/icon_reproduccion"
             />
-
     </group>
 
-    <item android:title="Otras opciones">
-        <menu>
-            <item
-                android:title="Configuración"
-                android:id="@+id/menu_configuracion"
-                />
-
-
-        </menu>
-    </item>
 </menu>

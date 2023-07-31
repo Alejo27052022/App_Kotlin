@@ -6,7 +6,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ECECEC"
+    android:background="#FDF9F9"
     tools:context=".Pages.RendimientoCalculo">
 
     <LinearLayout
@@ -23,12 +23,12 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.9"
+            android:layout_weight="1"
             android:background="#FFFFFF">
 
             <TextView
-                android:id="@+id/txtCalcular"
-                android:layout_width="match_parent"
+                android:id="@+id/txtRendimiento"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
@@ -39,25 +39,24 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.082"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.023" />
+                app:layout_constraintVertical_bias="0.025" />
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="300dp"
-                android:layout_height="200dp"
-                android:layout_margin="5dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/rendimiento_canal"
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="379dp"
+                android:layout_height="53dp"
+                android:justificationMode="inter_word"
+                android:text="El canal es el cuerpo de los animales ya sea bovinos, caprinos o porcinos, después de ser sacrificados, el cual consiste en una serie de procesos"
+                android:textColor="@color/black"
+                android:textSize="14dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.119"
-                app:shapeAppearanceOverlay="@style/roundimageview" />
+                app:layout_constraintVertical_bias="0.093" />
 
             <TextView
                 android:id="@+id/Raza"
@@ -72,7 +71,7 @@
                 app:layout_constraintHorizontal_bias="0.258"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.427" />
+                app:layout_constraintVertical_bias="0.529" />
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
@@ -80,10 +79,10 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.650"
+                app:layout_constraintHorizontal_bias="0.750"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.425">
+                app:layout_constraintVertical_bias="0.525">
 
                 <AutoCompleteTextView
                     android:id="@+id/dropdown_menu_field_raza"
@@ -108,7 +107,7 @@
                 app:layout_constraintHorizontal_bias="0.258"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.534" />
+                app:layout_constraintVertical_bias="0.629" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputLayout"
@@ -117,10 +116,10 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.650"
+                app:layout_constraintHorizontal_bias="0.750"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.530">
+                app:layout_constraintVertical_bias="0.630">
 
 
                 <AutoCompleteTextView
@@ -145,10 +144,10 @@
                 android:textColor="#000000"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.584"
+                app:layout_constraintHorizontal_bias="0.673"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.642" />
+                app:layout_constraintVertical_bias="0.73" />
 
             <TextView
                 android:id="@+id/txtKG"
@@ -163,7 +162,7 @@
                 app:layout_constraintHorizontal_bias="0.258"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.638" />
+                app:layout_constraintVertical_bias="0.738" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -174,10 +173,10 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.764"
+                app:layout_constraintHorizontal_bias="0.832"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.638" />
+                app:layout_constraintVertical_bias="0.738" />
 
             <Button
                 android:id="@+id/btn_calcular"
@@ -185,13 +184,14 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/color_button"
                 android:text="Calcular"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.775" />
+                app:layout_constraintVertical_bias="0.845" />
 
             <TextView
                 android:id="@+id/resultado_kilo"
@@ -200,16 +200,16 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:text="Resultado 1"
+                android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.274"
+                app:layout_constraintHorizontal_bias="0.18"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.872" />
+                app:layout_constraintVertical_bias="0.934" />
 
             <TextView
                 android:id="@+id/resultado_libra"
@@ -218,16 +218,16 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:text="Resultado 2"
+                android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.274"
+                app:layout_constraintHorizontal_bias="0.615"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.974" />
+                app:layout_constraintVertical_bias="0.933" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -241,10 +241,10 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.702"
+                app:layout_constraintHorizontal_bias="0.385"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.87" />
+                app:layout_constraintVertical_bias="0.933" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -258,35 +258,39 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.704"
+                app:layout_constraintHorizontal_bias="0.832"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.973" />
+                app:layout_constraintVertical_bias="0.937" />
 
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:layout_weight="0.1">
-
-            <ImageButton
-                android:id="@+id/home"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:background="#FFFFFF"
-                android:scaleType="fitCenter"
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView4"
+                android:layout_width="@dimen/width_section"
+                android:layout_height="@dimen/height_vertical"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_carne"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0"
-                app:srcCompat="@drawable/casa" />
+                app:layout_constraintVertical_bias="0.247"
+                app:shapeAppearanceOverlay="@style/roundimageview" />
+
+            <ImageView
+                android:id="@+id/regresar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/regresar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.013"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.991" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

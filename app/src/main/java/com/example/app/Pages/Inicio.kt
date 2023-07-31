@@ -41,6 +41,10 @@ class Inicio : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId){
+            R.id.home_option -> {
+                val intent = Intent(this, Inicio::class.java)
+                startActivity(intent)
+            }
             R.id.farmacologia_option -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
             R.id.nutricion_option -> Toast.makeText(this, "Nutricion", Toast.LENGTH_SHORT).show()
             R.id.manejo_option -> {
