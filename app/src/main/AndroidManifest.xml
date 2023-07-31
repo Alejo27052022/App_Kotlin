@@ -13,12 +13,22 @@
         tools:targetApi="31">
 
         <activity
+            android:name=".Pages.Farmacologia"
+            android:exported="true">
+
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+        </activity>
+
+        <activity
             android:name=".Pages.Inicio"
             android:exported="true"/>
         <activity
             android:name=".Pages.RendimientoCalculo"
             android:exported="true"/>
-
         <activity
             android:name=".Pages.PesoCalculo"
             android:exported="true" />
@@ -28,11 +38,6 @@
         <activity
             android:name=".Pages.IndexPage"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data
