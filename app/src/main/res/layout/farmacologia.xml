@@ -28,9 +28,7 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
+            <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:focusableInTouchMode="true"
@@ -216,7 +214,7 @@
                         android:layout_height="521dp"
                         android:padding="20dp"
                         android:textAppearance="?attr/textAppearanceSubtitle1"
-                        android:textSize="18sp"/>
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 

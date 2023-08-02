@@ -95,19 +95,33 @@ class Farmacologia: AppCompatActivity() {
         }
 
         val items = listOf(
-            "Amoxicilina",
-            "Ampicilina",
-            "Azitromicina",
-            "Bacitracina",
-            "Cefalexina",
-            "Cefoperazona",
-            "Cefradina",
-            "Claritromicina",
-            "Enrofloxacina",
-            "Espiramicina",
-            "Florfenicol",
-            "Furaltadona",
-            "Tiafenicol"
+            "Abamectina ",
+            "Amoxicilina ",
+            "Amoxicilina ",
+            "Buserelina acetato",
+            "Cefalexina monohidrato ",
+            "Ciprofloxacina ",
+            "Closantel",
+            "Diazinón",
+            "Eprinomectina",
+            "Fenilbutazona, Dexametasona",
+            "Fipronil, Fluazurón ",
+            "Florfenicol ",
+            "Gluconato de Calcio ",
+            "Ivermectina",
+            "Ketamina ",
+            "Neomicina ",
+            "Nitroxinil",
+            "Oxitetraciclina ",
+            "Oxitocina",
+            "Pentobarbital sódico",
+            "Praziquantel",
+            "Sulfato de cefquinoma ",
+            "Triclabendazol ",
+            "Vitamina A ",
+            "Vitamina C ",
+            "Xilazina "
+
         )
 
         autoComplete = findViewById(R.id.auto_complete)
@@ -149,76 +163,151 @@ class Farmacologia: AppCompatActivity() {
             val farmaco11: TextView = findViewById(R.id.farmaco)
             val farmaco12: TextView = findViewById(R.id.farmaco)
             val farmaco13: TextView = findViewById(R.id.farmaco)
-
+            val farmaco14: TextView = findViewById(R.id.farmaco)
+            val farmaco15: TextView = findViewById(R.id.farmaco)
+            val farmaco16: TextView = findViewById(R.id.farmaco)
+            val farmaco17: TextView = findViewById(R.id.farmaco)
+            val farmaco18: TextView = findViewById(R.id.farmaco)
+            val farmaco19: TextView = findViewById(R.id.farmaco)
+            val farmaco20: TextView = findViewById(R.id.farmaco)
+            val farmaco21: TextView = findViewById(R.id.farmaco)
+            val farmaco22: TextView = findViewById(R.id.farmaco)
+            val farmaco23: TextView = findViewById(R.id.farmaco)
+            val farmaco24: TextView = findViewById(R.id.farmaco)
+            val farmaco25: TextView = findViewById(R.id.farmaco)
+            val farmaco26: TextView = findViewById(R.id.farmaco)
+            val farmaco27: TextView = findViewById(R.id.farmaco)
             // Realizar comparación para mostrar el botón de dosis si se selecciona un fármaco específico
             when (selectedItem) {
 
-                "Amoxicilina" -> {
+                "Abamectina" -> {
                     farmaco1.text = getString(R.string.farma1)
 
                 }
 
-                "Ampicilina" -> {
+
+                "Amoxicilina " -> {
                     farmaco2.text = getString(R.string.farma2)
 
                 }
 
-                "Azitromicina" -> {
+                "Amoxicilina " -> {
                     farmaco3.text = getString(R.string.farma3)
 
                 }
 
-                "Bacitracina" -> {
+                "Buserelina acetato" -> {
                     farmaco4.text = getString(R.string.farma4)
 
                 }
 
-                "Cefalexina" -> {
+                "Cefalexina monohidrato " -> {
                     farmaco5.text = getString(R.string.farma5)
 
                 }
 
-                "Cefoperazona" -> {
+                "Ciprofloxacina " -> {
                     farmaco6.text = getString(R.string.farma6)
 
 
                 }
 
-                "Cefradina" -> {
+                "Closantel" -> {
                     farmaco7.text = getString(R.string.farma7)
 
                 }
 
-                "Claritromicina" -> {
+                "Diazinón" -> {
                     farmaco8.text = getString(R.string.farma8)
 
                 }
 
-                "Enrofloxacina" -> {
+                "Eprinomectina" -> {
                     farmaco9.text = getString(R.string.farma9)
 
                 }
 
-                "Espiramicina" -> {
+                "Fenilbutazona" -> {
                     farmaco10.text = getString(R.string.farma10)
 
                 }
 
-                "Florfenicol" -> {
+                "Fenilbutazona, Dexametasona" -> {
                     farmaco11.text = getString(R.string.farma11)
 
                 }
 
-                "Furaltadona" -> {
+                "Fipronil" -> {
                     farmaco12.text = getString(R.string.farma12)
 
                 }
 
-                "Tiafenicol" -> {
+                "Florfenicol " -> {
                     farmaco13.text = getString(R.string.farma13)
 
                 }
+                "Gluconato de Calcio " -> {
+                    farmaco14.text = getString(R.string.farma14)
 
+                }
+
+                "Ivermectina " -> {
+                    farmaco15.text = getString(R.string.farma15)
+
+                }
+
+                "Ketamina  " -> {
+                    farmaco16.text = getString(R.string.farma16)
+
+                }
+
+                "Neomicina"  -> {
+                    farmaco17.text = getString(R.string.farma17)
+
+                }
+                "Nitroxinil" -> {
+                    farmaco18.text = getString(R.string.farma18)
+
+                }
+
+                "Oxitetraciclina" -> {
+                    farmaco19.text = getString(R.string.farma19)
+
+                }
+
+                "Oxitocina" -> {
+                    farmaco20.text = getString(R.string.farma20)
+
+                }
+
+                "Pentobarbital sódico " -> {
+                    farmaco21.text = getString(R.string.farma21)
+
+                }
+                "Praziquantel " -> {
+                    farmaco22.text = getString(R.string.farma22)
+
+                }
+                "Sulfato de cefquinoma " -> {
+                    farmaco23.text = getString(R.string.farma23)
+
+                }
+                "Triclabendazol" -> {
+                    farmaco24.text = getString(R.string.farma24)
+
+                }
+                "Vitamina A " -> {
+                    farmaco25.text = getString(R.string.farma25)
+
+                }
+                "Vitamina C " -> {
+                    farmaco26.text = getString(R.string.farma26)
+
+                }
+                "Xilazina" -> {
+                    farmaco27.text = getString(R.string.farma27)
+
+                }
             }
 
 
