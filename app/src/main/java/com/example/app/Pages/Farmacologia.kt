@@ -84,7 +84,7 @@ class Farmacologia: AppCompatActivity() {
             val seleccionSpinner2 = spinner2.selectedItem.toString()
 
             // Construir el texto a mostrar en el resultado
-            val textoResultado = "Dosis: $resultado $seleccionSpinner2/$seleccionSpinner1"
+            val textoResultado = "RESULTADO: $resultado $seleccionSpinner2/$seleccionSpinner1"
 
             // Mostrar el resultado
             resultadoTextView.text = textoResultado
@@ -95,12 +95,12 @@ class Farmacologia: AppCompatActivity() {
         }
 
         val items = listOf(
-            "Abamectina ",
-            "Amoxicilina ",
-            "Amoxicilina ",
+            "Abamectina",
+            "Amoxicilina",
+            "Amoxicilina",
             "Buserelina acetato",
-            "Cefalexina monohidrato ",
-            "Ciprofloxacina ",
+            "Cefalexina monohidrato",
+            "Ciprofloxacina",
             "Closantel",
             "Diazinón",
             "Eprinomectina",
@@ -109,18 +109,18 @@ class Farmacologia: AppCompatActivity() {
             "Florfenicol ",
             "Gluconato de Calcio ",
             "Ivermectina",
-            "Ketamina ",
-            "Neomicina ",
+            "Ketamina",
+            "Neomicina",
             "Nitroxinil",
-            "Oxitetraciclina ",
+            "Oxitetraciclina",
             "Oxitocina",
             "Pentobarbital sódico",
             "Praziquantel",
-            "Sulfato de cefquinoma ",
+            "Sulfato de cefquinoma",
             "Triclabendazol ",
-            "Vitamina A ",
-            "Vitamina C ",
-            "Xilazina "
+            "Vitamina A",
+            "Vitamina C",
+            "Xilazina"
 
         )
 
@@ -186,12 +186,12 @@ class Farmacologia: AppCompatActivity() {
                 }
 
 
-                "Amoxicilina " -> {
+                "Amoxicilina" -> {
                     farmaco2.text = getString(R.string.farma2)
 
                 }
 
-                "Amoxicilina " -> {
+                "Amoxicilina" -> {
                     farmaco3.text = getString(R.string.farma3)
 
                 }
@@ -201,12 +201,12 @@ class Farmacologia: AppCompatActivity() {
 
                 }
 
-                "Cefalexina monohidrato " -> {
+                "Cefalexina monohidrato" -> {
                     farmaco5.text = getString(R.string.farma5)
 
                 }
 
-                "Ciprofloxacina " -> {
+                "Ciprofloxacina" -> {
                     farmaco6.text = getString(R.string.farma6)
 
 
@@ -242,21 +242,21 @@ class Farmacologia: AppCompatActivity() {
 
                 }
 
-                "Florfenicol " -> {
+                "Florfenicol" -> {
                     farmaco13.text = getString(R.string.farma13)
 
                 }
-                "Gluconato de Calcio " -> {
+                "Gluconato de Calcio" -> {
                     farmaco14.text = getString(R.string.farma14)
 
                 }
 
-                "Ivermectina " -> {
+                "Ivermectina" -> {
                     farmaco15.text = getString(R.string.farma15)
 
                 }
 
-                "Ketamina  " -> {
+                "Ketamina" -> {
                     farmaco16.text = getString(R.string.farma16)
 
                 }
@@ -280,15 +280,15 @@ class Farmacologia: AppCompatActivity() {
 
                 }
 
-                "Pentobarbital sódico " -> {
+                "Pentobarbital sódico" -> {
                     farmaco21.text = getString(R.string.farma21)
 
                 }
-                "Praziquantel " -> {
+                "Praziquantel" -> {
                     farmaco22.text = getString(R.string.farma22)
 
                 }
-                "Sulfato de cefquinoma " -> {
+                "Sulfato de cefquinoma" -> {
                     farmaco23.text = getString(R.string.farma23)
 
                 }
@@ -296,11 +296,11 @@ class Farmacologia: AppCompatActivity() {
                     farmaco24.text = getString(R.string.farma24)
 
                 }
-                "Vitamina A " -> {
+                "Vitamina A" -> {
                     farmaco25.text = getString(R.string.farma25)
 
                 }
-                "Vitamina C " -> {
+                "Vitamina C" -> {
                     farmaco26.text = getString(R.string.farma26)
 
                 }

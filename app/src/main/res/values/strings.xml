@@ -23,15 +23,9 @@
 
 
 
-    <string name="item_label">Farmacos</string>
-    <string-array name="options_array">
-        <item>Kg</item>
-        <item>Lb</item>
-    </string-array>
-    <string-array name="options_array2">
-        <item>ml</item>
-        <item>μl</item>
-    </string-array>
+
+
+
 
 
 </resources>
