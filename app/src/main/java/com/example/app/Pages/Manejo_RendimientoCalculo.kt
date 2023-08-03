@@ -9,7 +9,6 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -21,7 +20,7 @@ import com.example.app.R
 import com.example.app.databinding.ActivityRendimientoCalculoBinding
 import com.google.android.material.navigation.NavigationView
 
-class RendimientoCalculo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class Manejo_RendimientoCalculo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var drawer: DrawerLayout
     private lateinit var toggle: ActionBarDrawerToggle
@@ -61,7 +60,7 @@ class RendimientoCalculo : AppCompatActivity(), NavigationView.OnNavigationItemS
 
         val regresar : ImageView = findViewById(R.id.regresar)
         regresar.setOnClickListener{
-            val intent = Intent(this, Manejo::class.java)
+            val intent = Intent(this, Manejo_Inicio::class.java)
             startActivity(intent)
         }
 
@@ -271,7 +270,7 @@ class RendimientoCalculo : AppCompatActivity(), NavigationView.OnNavigationItemS
             R.id.farmacologia_option -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
             R.id.nutricion_option -> Toast.makeText(this, "Nutricion", Toast.LENGTH_SHORT).show()
             R.id.manejo_option -> {
-                val intent = Intent(this, Manejo::class.java)
+                val intent = Intent(this, Manejo_Inicio::class.java)
                 startActivity(intent)
 
             }

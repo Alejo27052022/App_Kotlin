@@ -2,41 +2,44 @@ package com.example.app.Pages
 
 import android.content.Intent
 import android.content.res.Configuration
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.app.R
 import com.google.android.material.navigation.NavigationView
 
-class Section_Forraje : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class Manejo_Inicio : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var drawer: DrawerLayout
     private lateinit var toggle: ActionBarDrawerToggle
 
-    override fun onCreate(savedInstanceState: Bundle?){
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_forraje)
+        setContentView(R.layout.activity_manejo)
 
         val toolbar : Toolbar = findViewById(R.id.toolbar_main)
         setSupportActionBar(toolbar)
 
-        val button_forraje: Button = findViewById(R.id.btn_forraje)
-        button_forraje.setOnClickListener{
-            Calcular()
-        }
+        val peso: ConstraintLayout = findViewById(R.id.Peso_Calculo)
+        val canal: ConstraintLayout = findViewById(R.id.Rendimiento_Canal)
+        val section_forager: ConstraintLayout = findViewById(R.id.Section_forr)
 
-        val regresar : ImageView = findViewById(R.id.regresar)
-        regresar.setOnClickListener{
-            val intent = Intent(this, Manejo::class.java)
+        peso.setOnClickListener{
+            val intent = Intent(this, Manejo_PesoCalculo::class.java)
+            startActivity(intent)
+        }
+        canal.setOnClickListener{
+            val intent = Intent(this, Manejo_RendimientoCalculo::class.java)
+            startActivity(intent)
+        }
+        section_forager.setOnClickListener{
+            val intent = Intent(this, Manejo_Section_Forraje::class.java)
             startActivity(intent)
         }
 
@@ -51,28 +54,6 @@ class Section_Forraje : AppCompatActivity(), NavigationView.OnNavigationItemSele
         navigationView.setNavigationItemSelectedListener(this)
     }
 
-    private fun Calcular(){
-        val constante_animal : Double= 400.0;
-        val Num_Animal : EditText = findViewById(R.id.Num_Anim)
-        var num : Double = Num_Animal.text.toString().toDouble()
-
-        val Peso_Forraje : EditText = findViewById(R.id.Peso_Forraje)
-        var peso : Double = Peso_Forraje.text.toString().toDouble()
-
-        val Hectareas : EditText = findViewById(R.id.Hectareas)
-        var hectareas_num : Double = Hectareas.text.toString().toDouble()
-
-        var res_hectareas : TextView = findViewById(R.id.Res_An_Hectareas)
-        var res_animal : TextView = findViewById(R.id.Res_Animal)
-
-        var resultado_animal : Double = (peso/constante_animal)
-        res_animal.text = String.format("%.2f", resultado_animal)
-
-        var resultado_hectareas: Double = (resultado_animal * num)/hectareas_num
-        res_hectareas.text = String.format("%.2f", resultado_hectareas)
-
-    }
-
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId){
@@ -83,12 +64,14 @@ class Section_Forraje : AppCompatActivity(), NavigationView.OnNavigationItemSele
             R.id.farmacologia_option -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
             R.id.nutricion_option -> Toast.makeText(this, "Nutricion", Toast.LENGTH_SHORT).show()
             R.id.manejo_option -> {
-                val intent = Intent(this, Manejo::class.java)
+                val intent = Intent(this, Manejo_Inicio::class.java)
                 startActivity(intent)
 
             }
 
             R.id.reproduccion_option -> Toast.makeText(this, "Reproduccion", Toast.LENGTH_SHORT).show()
+
+
         }
         drawer.closeDrawer(GravityCompat.START)
         return true
@@ -110,4 +93,10 @@ class Section_Forraje : AppCompatActivity(), NavigationView.OnNavigationItemSele
         }
         return super.onOptionsItemSelected(item)
     }
+
 }
+
+/*
+
+
+ */

@@ -48,7 +48,7 @@ class Inicio : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
             R.id.farmacologia_option -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
             R.id.nutricion_option -> Toast.makeText(this, "Nutricion", Toast.LENGTH_SHORT).show()
             R.id.manejo_option -> {
-                val intent = Intent(this, Manejo::class.java)
+                val intent = Intent(this, Manejo_Inicio::class.java)
                 startActivity(intent)
 
             }

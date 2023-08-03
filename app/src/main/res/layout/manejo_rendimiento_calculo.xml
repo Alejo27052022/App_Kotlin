@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FDF9F9"
-    tools:context=".Pages.Section_Forraje">
+    tools:context=".Pages.Manejo_RendimientoCalculo">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,30 +24,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#FDF9F9">
+            android:background="#FFFFFF">
 
             <TextView
+                android:id="@+id/txtRendimiento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:text="Forraje"
+                android:text="Rendimiento de Canal"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="22dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintHorizontal_bias="0.082"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.021" />
+                app:layout_constraintVertical_bias="0.025" />
 
             <TextView
+                android:id="@+id/textView6"
                 android:layout_width="379dp"
                 android:layout_height="53dp"
                 android:justificationMode="inter_word"
-                android:text="Las pasturas o forrajes son los alimentos con los que cubren todas sus necesidades claves: mantenimiento, crecimiento preñez y desarrollo corporal."
+                android:text="El canal es el cuerpo de los animales ya sea bovinos, caprinos o porcinos, después de ser sacrificados, el cual consiste en una serie de procesos"
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -56,50 +58,99 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.093" />
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="@dimen/width_vertical"
-                android:layout_height="@dimen/height_vertical"
-                android:cropToPadding="false"
-                android:scaleType="centerCrop"
-                android:src="@drawable/forraje_img"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.066"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.297"
-                app:shapeAppearanceOverlay="@style/roundimageview"/>
-
             <TextView
+                android:id="@+id/Raza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Numero de Animales"
+                android:text="Raza"
                 android:textColor="@color/black"
                 android:textSize="18dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.843"
+                app:layout_constraintHorizontal_bias="0.258"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.225" />
+                app:layout_constraintVertical_bias="0.529" />
 
-            <EditText
-                android:id="@+id/Num_Anim"
-                android:layout_width="160dp"
-                android:layout_height="40dp"
-                android:autofillHints=""
-                android:ems="10"
-                android:inputType="numberDecimal"
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.816"
+                app:layout_constraintHorizontal_bias="0.750"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.263"
-                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                app:layout_constraintVertical_bias="0.525">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_menu_field_raza"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:inputType="none"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
+                android:id="@+id/Sexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexo"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.258"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.629" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.750"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.630">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_menu_field_sexo"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="none"
+                    android:textColor="#000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/txtPeso"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.673"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.73" />
+
+            <TextView
+                android:id="@+id/txtKG"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Peso"
@@ -108,59 +159,31 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.552"
+                app:layout_constraintHorizontal_bias="0.258"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.339" />
-
-            <EditText
-                android:id="@+id/Peso_Forraje"
-                android:layout_width="160dp"
-                android:layout_height="40dp"
-                android:autofillHints=""
-                android:ems="10"
-                android:inputType="numberDecimal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.816"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.38"
-                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                app:layout_constraintVertical_bias="0.738" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hectareas"
+                android:text="KG"
                 android:textColor="@color/black"
                 android:textSize="18dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.623"
+                app:layout_constraintHorizontal_bias="0.832"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.455" />
-
-            <EditText
-                android:id="@+id/Hectareas"
-                android:layout_width="160dp"
-                android:layout_height="40dp"
-                android:autofillHints=""
-                android:ems="10"
-                android:inputType="numberDecimal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.816"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.497"
-                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                app:layout_constraintVertical_bias="0.738" />
 
             <Button
-                android:id="@+id/btn_forraje"
+                android:id="@+id/btn_calcular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
                 android:backgroundTint="@color/color_button"
                 android:text="Calcular"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -168,66 +191,93 @@
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.618" />
+                app:layout_constraintVertical_bias="0.845" />
 
             <TextView
+                android:id="@+id/resultado_kilo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Unidad Animal"
-                android:textColor="@color/black"
-                android:textSize="16dp"
-                android:textStyle="italic"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.755"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.71" />
-
-            <TextView
-                android:layout_width="144dp"
-                android:layout_height="40dp"
-                android:text="Unidad Animal por Hectareas"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="16dp"
-                android:textStyle="italic"
+                android:textSize="18dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.801"
+                app:layout_constraintHorizontal_bias="0.18"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.808" />
+                app:layout_constraintVertical_bias="0.934" />
 
             <TextView
-                android:id="@+id/Res_An_Hectareas"
+                android:id="@+id/resultado_libra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
                 android:text=""
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="16dp"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.615"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.933" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="Kg"
+                android:textColor="@color/black"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.254"
+                app:layout_constraintHorizontal_bias="0.385"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.803" />
+                app:layout_constraintVertical_bias="0.933" />
 
             <TextView
-                android:id="@+id/Res_Animal"
+                android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=""
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="Lb"
                 android:textColor="@color/black"
-                android:textSize="16dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.254"
+                app:layout_constraintHorizontal_bias="0.832"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.71" />
+                app:layout_constraintVertical_bias="0.937" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView4"
+                android:layout_width="@dimen/width_section"
+                android:layout_height="@dimen/height_vertical"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_carne"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.247"
+                app:shapeAppearanceOverlay="@style/roundimageview" />
 
             <ImageView
                 android:id="@+id/regresar"
@@ -240,6 +290,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.991" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -258,9 +309,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:background="#138A36"
             android:layout_gravity="bottom"
-            android:background="#138A36" />
+            />
 
     </com.google.android.material.navigation.NavigationView>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

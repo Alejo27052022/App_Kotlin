@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -18,13 +17,13 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.example.app.R
 import com.google.android.material.navigation.NavigationView
 
-class PesoCalculo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class Manejo_PesoCalculo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var drawer: DrawerLayout
     private lateinit var toggle: ActionBarDrawerToggle
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_peso_calculo)
+        setContentView(R.layout.manejo_peso_calculo)
 
         val toolbar : Toolbar = findViewById(R.id.toolbar_main)
         setSupportActionBar(toolbar)
@@ -36,7 +35,7 @@ class PesoCalculo : AppCompatActivity(), NavigationView.OnNavigationItemSelected
 
         val regresar : ImageView = findViewById(R.id.regresar)
         regresar.setOnClickListener{
-            val intent = Intent(this, Manejo::class.java)
+            val intent = Intent(this, Manejo_Inicio::class.java)
             startActivity(intent)
         }
 
@@ -76,7 +75,7 @@ class PesoCalculo : AppCompatActivity(), NavigationView.OnNavigationItemSelected
             R.id.farmacologia_option -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
             R.id.nutricion_option -> Toast.makeText(this, "Nutricion", Toast.LENGTH_SHORT).show()
             R.id.manejo_option -> {
-                val intent = Intent(this, Manejo::class.java)
+                val intent = Intent(this, Manejo_Inicio::class.java)
                 startActivity(intent)
 
             }

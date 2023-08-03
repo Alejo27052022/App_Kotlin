@@ -9,7 +9,7 @@ import com.example.app.R
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_peso_calculo)
+        setContentView(R.layout.manejo_peso_calculo)
 
         val button: Button = findViewById(R.id.btn_calcularpeso)
         button.setOnClickListener {
