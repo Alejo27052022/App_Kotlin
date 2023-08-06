@@ -27,4 +27,51 @@
         <item name="cornerSize">20dp</item> <!-- Ajusta el radio según lo desees -->
     </style>
 
+    <style name="DatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+    </style>
+    
+    <style name="MyDatePickerStyle" parent="android:Widget.Material.Light.DatePicker">
+        <!-- Cambia el color del fondo del calendario -->
+        <item name="android:background">@color/colorFondoCalendario</item>
+        <item name="android:colorControlNormal">@color/colorPiePagina</item>
+        <!-- Cambia el color de los números del día -->
+        <item name="android:datePickerMode">calendar</item>
+        <item name="android:headerBackground">@color/colorEncabezadoCalendario</item>
+        <item name="android:yearListItemTextAppearance">@style/MyDatePickerTextAppearance</item>
+        <item name="android:yearListSelectorColor">@color/colorSelectorAnioCalendario</item>
+    </style>
+
+    <style name="MyDatePickerTextAppearance" parent="android:TextAppearance.Material.Widget.Button">
+        <!-- Cambia el color del texto de los números del día -->
+        <item name="android:textColor">@color/colorNumeroDia</item>
+    </style>
+
+
+    <style name="MyTimePickerDialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <!-- Cambia el color de fondo del reloj -->
+        <item name="android:timePickerStyle">@style/MyTimePickerStyle</item>
+    </style>
+
+    <style name="MyTimePickerStyle" parent="android:Widget.Material.Light.TimePicker">
+        <item name="android:headerBackground">@color/colorEncabezadoCalendario</item>
+        <!-- Cambia el color de fondo del reloj -->
+        <item name="android:numbersBackgroundColor">@color/colorFondoReloj</item>
+        <!-- Cambia el color del texto de los números del reloj -->
+        <item name="android:numbersTextColor">@color/colorNumeroReloj</item>
+        <!-- Cambia el color de los botones del pie de página del reloj -->
+        <item name="android:colorControlActivated">@color/colorPiePaginaReloj</item>
+        <!-- Cambia el color del texto de los botones del diálogo del reloj -->
+        <item name="android:button">@style/MyButtonStyle</item>
+        <!-- Cambia el color del círculo de selección de hora y minutos -->
+        <item name="android:colorAccent">@color/colorCirculoSeleccionReloj</item>
+
+    </style>
+
+    <style name="MyButtonStyle" parent="android:Widget.Material.Button">
+        <!-- Cambia el color del texto de los botones del diálogo del reloj -->
+        <item name="android:textColor">@color/colorTextoBotonesReloj</item>
+    </style>
+
+
 </resources>

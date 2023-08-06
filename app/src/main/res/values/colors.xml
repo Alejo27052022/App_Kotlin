@@ -8,4 +8,20 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="color_button">#7B561F</color>
+
+    <!-- Otros colores definidos -->
+    <color name="colorFondoCalendario">#FFFFFFFF</color>
+    <color name="colorPiePagina">#FF0000</color>
+    <color name="colorEncabezadoCalendario">#258d19</color>
+    <color name="colorNumeroDia">#92e27a</color>
+    <color name="colorSelectorAnioCalendario">#4ea93b</color>
+    <color name="custom_calendar_date_color">#FF000000</color>
+
+    <!-- Otros colores definidos -->
+    <color name="colorFondoReloj">#F0F0F0</color>
+    <color name="colorNumeroReloj">#000000</color>
+    <color name="colorPiePaginaReloj">#FF0000</color>
+    <color name="colorTextoBotonesReloj">#FF0000</color>
+    <color name="colorCirculoSeleccionReloj">#FF0000</color>
+
 </resources>
