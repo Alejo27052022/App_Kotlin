@@ -61,6 +61,16 @@ class Manejo_Section_Forraje : AppCompatActivity(), NavigationView.OnNavigationI
 
         val Hectareas : EditText = findViewById(R.id.Hectareas)
         var hectareas_num : Double = Hectareas.text.toString().toDouble()
+        // Verificar si los EditText están vacíos
+        if (Num_Animal.text.isBlank() || Peso_Forraje.text.isBlank() || Hectareas.text.isBlank()) {
+            Toast.makeText(this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show()
+            return
+        }
+        // Verificar si el valor de Hectareas es cero o negativo
+        if (hectareas_num <= 0.0) {
+            Toast.makeText(this, "El valor de las hectáreas debe ser mayor que cero", Toast.LENGTH_SHORT).show()
+            return
+        }
 
         var res_hectareas : TextView = findViewById(R.id.Res_An_Hectareas)
         var res_animal : TextView = findViewById(R.id.Res_Animal)

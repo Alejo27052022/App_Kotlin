@@ -57,6 +57,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.116" />
 
+
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/shapeableImageView3"
                 android:layout_width="@dimen/width_vertical"
@@ -68,9 +69,8 @@
                 app:layout_constraintHorizontal_bias="0.933"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.292"
+                app:layout_constraintVertical_bias="0.398"
                 app:shapeAppearanceOverlay="@style/roundimageview" />
-
 
             <EditText
                 android:id="@+id/PTTEXT"
@@ -140,10 +140,10 @@
                 android:text="Calcular"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintHorizontal_bias="0.254"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.592" />
+                app:layout_constraintVertical_bias="0.576" />
 
             <TextView
                 android:id="@+id/pesoresultado"

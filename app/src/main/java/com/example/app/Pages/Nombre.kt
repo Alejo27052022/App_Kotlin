@@ -1,4 +1,4 @@
-package com.example.basededatos
+package com.example.app.Pages
 class Nombre {
     var id: Int = 0 //declara una variable id que será tipo enter
     var Nombrevaca: String? = null //declara una variable String

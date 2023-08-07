@@ -1,4 +1,4 @@
-package com.example.basededatos
+package com.example.app.Pages
 import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
@@ -59,4 +59,4 @@ class ayudaDb(
     }
 }
 
-data class Persona(val nombre: String, val descripcion: String, val fecha: Int, val hora: String, val inserto: String, val retiro: String,)
+data class Persona(val nombre: String, val descripcion: String, val fecha: String, val hora: String, val inserto: String, val retiro: String,)

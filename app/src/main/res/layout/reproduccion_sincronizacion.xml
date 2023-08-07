@@ -98,6 +98,7 @@
                 app:layout_constraintHorizontal_bias="0.142"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+
                 app:layout_constraintVertical_bias="0.325" />
 
             <ImageButton
@@ -105,7 +106,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/calendar_month"
-                android:background="#FFFFFFF"
+                android:background="#FFFFFF"
                 android:onClick="fechaButtonOnClick"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -143,7 +144,7 @@
                 android:id="@+id/horaButton"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:background="#FFFFFFF"
+                android:background="#FFFFFF"
                 android:src="@drawable/baseline_access_time_24"
                 android:onClick="horaButtonOnClick"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -155,20 +156,20 @@
 
             <Button
                 android:id="@+id/calcularButton"
-                android:layout_below="@+id/horaButton"
-                android:onClick="calcularButtonOnClick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/horaButton"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:backgroundTint="@color/color_button"
+                android:onClick="calcularButtonOnClick"
                 android:text="Calcular"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.582" />
+                app:layout_constraintVertical_bias="0.581" />
 
             <TextView
                 android:id="@+id/resultadoTextView"

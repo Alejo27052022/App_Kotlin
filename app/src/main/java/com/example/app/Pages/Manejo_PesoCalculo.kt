@@ -57,6 +57,11 @@ class Manejo_PesoCalculo : AppCompatActivity(), NavigationView.OnNavigationItemS
         val sumando: Double = num1.text.toString().toDouble()
         val num2: EditText = findViewById(R.id.LCTEXT)
         val sumador: Double = num2.text.toString().toDouble()
+        // Verificar si los EditText están vacíos
+        if (num1.text.isBlank() || num2.text.isBlank()) {
+            Toast.makeText(this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show()
+            return
+        }
         val suma: Double = sumando * sumando * sumador / constantepeso
         val resultado: TextView = findViewById(R.id.pesoresultado)
         resultado.text = String.format("%.2f",suma)

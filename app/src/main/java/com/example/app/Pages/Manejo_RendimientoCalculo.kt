@@ -75,7 +75,23 @@ class Manejo_RendimientoCalculo : AppCompatActivity(), NavigationView.OnNavigati
 
         var peso_ingresado: EditText = findViewById(R.id.txtPeso)
         var peso: Double = peso_ingresado.text.toString().toDouble()
+// Verificar si se ha seleccionado una raza
+        if (raza.isBlank()) {
+            Toast.makeText(this, "Por favor, seleccione una raza", Toast.LENGTH_SHORT).show()
+            return
+        }
 
+// Verificar si se ha seleccionado un sexo
+        if (sexo.isBlank()) {
+            Toast.makeText(this, "Por favor, seleccione un sexo", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+// Verificar si se ha ingresado un peso
+        if (peso == null) {
+            Toast.makeText(this, "Por favor, ingrese un peso válido", Toast.LENGTH_SHORT).show()
+            return
+        }
         var resultado_kilo: TextView = findViewById(R.id.resultado_kilo)
         var resultado_libra: TextView = findViewById(R.id.resultado_libra)
 

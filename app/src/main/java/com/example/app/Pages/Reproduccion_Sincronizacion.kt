@@ -7,6 +7,7 @@ import android.content.res.Configuration
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
+import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
@@ -28,6 +29,13 @@ class Reproduccion_Sincronizacion : AppCompatActivity(), NavigationView.OnNaviga
     private lateinit var horaButton: ImageButton
     private lateinit var drawer: DrawerLayout
     private lateinit var toggle: ActionBarDrawerToggle
+    private lateinit var fechavaca: TextView
+    private lateinit var horavaca: TextView
+    private lateinit var rest: TextView
+    //En esta parte se colocará las variables a usar para guardar los datos en la bd
+
+
+
 
     private var fechaIngreso: String = ""
     private var horaIngreso: String = ""
@@ -52,6 +60,13 @@ class Reproduccion_Sincronizacion : AppCompatActivity(), NavigationView.OnNaviga
         resultadoTextView = findViewById(R.id.resultadoTextView)
         fechaButton = findViewById(R.id.fechaButton)
         horaButton = findViewById(R.id.horaButton)
+        fechavaca= findViewById(R.id.Fech_Vaca)
+        horavaca= findViewById(R.id.Hora_Vaca)
+        rest= findViewById(R.id.Hora_Vaca)
+        //En esta parte se colocará las variables a usar para guardar los datos en la bd
+
+
+
 
     }
 
@@ -68,6 +83,24 @@ class Reproduccion_Sincronizacion : AppCompatActivity(), NavigationView.OnNaviga
 
         resultadoTextView.append("\nActividad: IATF (Inseminación Artificial a Tiempo Fijo)\nFecha: $fechaHoraIATF  \n")
         administrarMedicamento("GNRH 2ml", fechaHoraIATF)
+
+        val nombrev: EditText = findViewById(R.id.Nom_Vaca)
+        val descripcionv: EditText = findViewById(R.id.Des_Vaca)
+        val fechavaca: EditText = findViewById(R.id.Fech_Vaca)
+        val horav: EditText = findViewById(R.id.Hora_Vaca)
+
+
+        val dbHandler = ayudaDb(this, null)
+        val persona = Persona(nombrev.text.toString(), descripcionv.text.toString(),fechavaca.text.toString(),horav.text.toString(),fechaHoraRetiro.toString(),fechaHoraIATF.toString())
+        dbHandler.addName(persona)
+        Toast.makeText(this, "Se agregó a la base de datos a: " + persona.nombre, Toast.LENGTH_LONG).show()
+        nombrev.setText("")
+        descripcionv.setText("")
+        fechavaca.setText("")
+        horav.setText("")
+        resultadoTextView.setText("")
+
+
     }
 
     fun fechaButtonOnClick(view: View) {
@@ -79,7 +112,9 @@ class Reproduccion_Sincronizacion : AppCompatActivity(), NavigationView.OnNaviga
         val datePickerDialog = DatePickerDialog(this, R.style.DatePickerDialogTheme,
             DatePickerDialog.OnDateSetListener { _, selectedYear, selectedMonth, selectedDayOfMonth ->
                 fechaIngreso = String.format("%04d-%02d-%02d", selectedYear, selectedMonth + 1, selectedDayOfMonth)
-                fechaButton.txt = "Fecha seleccionada: $fechaIngreso"
+                fechavaca.text = "Fecha seleccionada: $fechaIngreso"
+                fechavaca.text = fechaIngreso
+
             }, year, month, dayOfMonth)
 
         datePickerDialog.show()
@@ -93,7 +128,8 @@ class Reproduccion_Sincronizacion : AppCompatActivity(), NavigationView.OnNaviga
         val timePickerDialog = TimePickerDialog(this, R.style.MyTimePickerDialogTheme,
             TimePickerDialog.OnTimeSetListener { _, selectedHour, selectedMinute ->
                 horaIngreso = String.format("%02d:%02d", selectedHour, selectedMinute)
-                horaButton.text = "Hora seleccionada: $horaIngreso"
+                horavaca.text= "Hora seleccionada: $horaIngreso"
+                horavaca.text=  horaIngreso
             }, hour, minute, true)
 
         timePickerDialog.show()
