@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF9F9"
+    tools:context=".Pages.Nutricion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="107dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="#FDF9F9">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vitaminas"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.089"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.034" />
+
+            <TextView
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:text="Las vitaminas son sustancias importantes que tienen participación en el metabolismo del organismo, son un componente de coenzimas y enzimas que no pueden ser sintetizadas por el propio organismo"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:justificationMode="inter_word"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.411"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.116" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="@dimen/width_image_manejo"
+                android:layout_height="@dimen/height_image_manejo"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vitaminas"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.347"
+                app:shapeAppearanceOverlay="@style/roundimageview" />
+
+            <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:background="#FFF9C8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.717"
+                app:shapeAppearanceOverlay="@style/roundimageview">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:text="Vitaminas Liposolubles"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center||start"
+                    android:layout_marginLeft="20dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ilosolubles"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center||end"
+                    android:layout_marginRight="50dp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:background="#FFF9C8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.904"
+                app:shapeAppearanceOverlay="@style/roundimageview">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:text="Vitaminas Hidrosolubles"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center||start"
+                    android:layout_marginLeft="20dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/hidrosoluble"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center||end"
+                    android:layout_marginRight="50dp"/>
+
+            </FrameLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header_navigation_drawer"
+        app:menu="@menu/nav_options">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#138A36"
+            android:layout_gravity="bottom"
+            />
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

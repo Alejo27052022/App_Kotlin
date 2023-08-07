@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+        <!-- Tabla -->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+         <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorYellow"
+                android:padding="8dp"
+                android:text="Requerimiento"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorYellow"
+                android:padding="8dp"
+                android:text="Valor"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Fila 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorOrange"
+                android:padding="8dp"
+                android:text="Energía"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorOrange"
+                android:padding="8dp"
+                android:text="3058"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Fila 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="70dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorBrown"
+                android:padding="8dp"
+                android:text="Proteína"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorBrown"
+                android:padding="8dp"
+                android:text="14,4"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Fila 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="105dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorGreen"
+                android:padding="8dp"
+                android:text="Fibra"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorGreen"
+                android:padding="8dp"
+                android:text="18"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="140dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorCyan"
+                android:padding="8dp"
+                android:text="Hierro"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorCyan"
+                android:padding="8dp"
+                android:text="0,005"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="175dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorGray"
+                android:padding="8dp"
+                android:text="Calcio"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorGray"
+                android:padding="8dp"
+                android:text="0,69"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="210dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorBlue"
+                android:padding="8dp"
+                android:text="Fosfóro"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorBlue"
+                android:padding="8dp"
+                android:text="0,32"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="245dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorRed"
+                android:padding="8dp"
+                android:text="Sodio"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorRed"
+                android:padding="8dp"
+                android:text="0,022"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+</RelativeLayout>
+
+
+
