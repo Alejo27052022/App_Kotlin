@@ -68,6 +68,11 @@ class Farmacologia: AppCompatActivity() {
             val pesoAnimal = pesoAnimalEditText.text.toString().toDouble()
             val dosisMedica = dosisMedicaEditText.text.toString().toDouble()
             val concentracionMed = concentracionMedEditText.text.toString().toDouble()
+            // Verificar que los dividendos sean diferentes de cero
+            if (dosisMedica == 0.0 || concentracionMed == 0.0) {
+                Toast.makeText(this, "Los dividendos deben ser diferentes de cero", Toast.LENGTH_SHORT).show()
+                return
+            }
 
 
 
