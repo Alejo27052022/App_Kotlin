@@ -84,7 +84,7 @@ class Farmacologia: AppCompatActivity() {
             val seleccionSpinner2 = spinner2.selectedItem.toString()
 
             // Construir el texto a mostrar en el resultado
-            val textoResultado = "RESULTADO: $resultado $seleccionSpinner2/$seleccionSpinner1"
+            val textoResultado = "Dosis: $resultado $seleccionSpinner2/$seleccionSpinner1"
 
             // Mostrar el resultado
             resultadoTextView.text = textoResultado
@@ -106,8 +106,8 @@ class Farmacologia: AppCompatActivity() {
             "Eprinomectina",
             "Fenilbutazona, Dexametasona",
             "Fipronil, Fluazurón ",
-            "Florfenicol ",
-            "Gluconato de Calcio ",
+            "Florfenicol",
+            "Gluconato de Calcio",
             "Ivermectina",
             "Ketamina",
             "Neomicina",
@@ -117,7 +117,7 @@ class Farmacologia: AppCompatActivity() {
             "Pentobarbital sódico",
             "Praziquantel",
             "Sulfato de cefquinoma",
-            "Triclabendazol ",
+            "Triclabendazol",
             "Vitamina A",
             "Vitamina C",
             "Xilazina"
