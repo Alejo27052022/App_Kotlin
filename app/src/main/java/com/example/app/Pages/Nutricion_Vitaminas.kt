@@ -2,43 +2,41 @@ package com.example.app.Pages
 
 import android.content.Intent
 import android.content.res.Configuration
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.FrameLayout
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.app.R
 import com.google.android.material.navigation.NavigationView
 
-class PesoCalculo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class Nutricion_Vitaminas : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var drawer: DrawerLayout
     private lateinit var toggle: ActionBarDrawerToggle
-    override fun onCreate(savedInstanceState: Bundle?) {
+
+    override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_peso_calculo)
+        setContentView(R.layout.nutricion_vitaminas)
+
+        val vita_lipo : FrameLayout = findViewById(R.id.frame_lipo)
+        vita_lipo.setOnClickListener{
+            val intent = Intent(this, Nutricion_Liposolubles::class.java)
+            startActivity(intent)
+        }
+
+        val vita_hidro : FrameLayout = findViewById(R.id.frame_hidro)
+        vita_hidro.setOnClickListener{
+            val intent = Intent(this, Nutricion_Hidrosolubles::class.java)
+            startActivity(intent)
+        }
 
         val toolbar : Toolbar = findViewById(R.id.toolbar_main)
         setSupportActionBar(toolbar)
-
-        val button: Button = findViewById(R.id.btn_calcularpeso)
-        button.setOnClickListener {
-            calcularPeso()
-        }
-
-        val regresar : ImageView = findViewById(R.id.regresar)
-        regresar.setOnClickListener{
-            val intent = Intent(this, Manejo::class.java)
-            startActivity(intent)
-        }
 
         drawer = findViewById(R.id.drawer_layout)
         toggle = ActionBarDrawerToggle(this,drawer,toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
@@ -50,20 +48,6 @@ class PesoCalculo : AppCompatActivity(), NavigationView.OnNavigationItemSelected
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
 
-    }
-
-    private fun calcularPeso() {
-        val constantepeso = 10838
-        val num1: EditText = findViewById(R.id.PTTEXT)
-        val sumando: Double = num1.text.toString().toDouble()
-        val num2: EditText = findViewById(R.id.LCTEXT)
-        val sumador: Double = num2.text.toString().toDouble()
-        val suma: Double = sumando * sumando * sumador / constantepeso
-        val resultado: TextView = findViewById(R.id.pesoresultado)
-        resultado.text = String.format("%.2f",suma)
-        val libras:Double=suma*2.2
-        val resultadolibras: TextView = findViewById(R.id.pesoresultadolibras)
-        resultadolibras.text = String.format("%.2f",libras)
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {

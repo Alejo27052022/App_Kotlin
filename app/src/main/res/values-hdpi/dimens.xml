@@ -9,6 +9,8 @@
     <dimen name="width_section">400dp</dimen>
     <dimen name="height_section">90dp</dimen>
 
+    <dimen name="section_height">150dp</dimen>
+
     <dimen name="width_vertical">170dp</dimen>
     <dimen name="height_vertical">250dp</dimen>
 </resources>
