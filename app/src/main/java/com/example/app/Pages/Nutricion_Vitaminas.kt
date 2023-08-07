@@ -11,70 +11,27 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaB1
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaB10
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaB12
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaB2
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaB6
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaB7
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaB8
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaC
 import com.example.app.R
 import com.google.android.material.navigation.NavigationView
 
-class Nutricion_Hidrosolubles : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class Nutricion_Vitaminas : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var drawer: DrawerLayout
     private lateinit var toggle: ActionBarDrawerToggle
+
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.nutricion_vitaminas_hidrosolubles)
+        setContentView(R.layout.nutricion_vitaminas)
 
-        val vita_b1 : FrameLayout = findViewById(R.id.frame_vitaB1)
-        vita_b1.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaB1::class.java)
+        val vita_lipo : FrameLayout = findViewById(R.id.frame_lipo)
+        vita_lipo.setOnClickListener{
+            val intent = Intent(this, Nutricion_Liposolubles::class.java)
             startActivity(intent)
         }
 
-        val vita_b2 : FrameLayout = findViewById(R.id.frame_vitaB2)
-        vita_b2.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaB2::class.java)
-            startActivity(intent)
-        }
-
-        val vita_b12 : FrameLayout = findViewById(R.id.frame_vitaB12)
-        vita_b12.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaB12::class.java)
-            startActivity(intent)
-        }
-
-        val vita_c : FrameLayout = findViewById(R.id.frame_vitaC)
-        vita_c.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaC::class.java)
-            startActivity(intent)
-        }
-
-        val vita_b6 : FrameLayout = findViewById(R.id.frame_vitaB6)
-        vita_b6.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaB6::class.java)
-            startActivity(intent)
-        }
-
-        val vita_b7 : FrameLayout = findViewById(R.id.frame_vitaB7)
-        vita_b7.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaB7::class.java)
-            startActivity(intent)
-        }
-
-        val vita_b8 : FrameLayout = findViewById(R.id.frame_vitaB8)
-        vita_b8.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaB8::class.java)
-            startActivity(intent)
-        }
-
-        val vita_b10 : FrameLayout = findViewById(R.id.frame_vitaB10)
-        vita_b10.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaB10::class.java)
+        val vita_hidro : FrameLayout = findViewById(R.id.frame_hidro)
+        vita_hidro.setOnClickListener{
+            val intent = Intent(this, Nutricion_Hidrosolubles::class.java)
             startActivity(intent)
         }
 

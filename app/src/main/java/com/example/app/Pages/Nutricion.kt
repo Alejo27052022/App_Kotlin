@@ -42,6 +42,12 @@ class Nutricion : AppCompatActivity(), NavigationView.OnNavigationItemSelectedLi
             val intent = Intent(this, Calculo_Nutrientes::class.java)
             startActivity(intent)
         }
+
+        val vitaminas : ImageView = findViewById(R.id.id_vitaminas)
+        vitaminas.setOnClickListener{
+            val intent = Intent(this, Nutricion_Vitaminas::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -52,7 +58,10 @@ class Nutricion : AppCompatActivity(), NavigationView.OnNavigationItemSelectedLi
                 startActivity(intent)
             }
             R.id.farmacologia_option -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
-            R.id.nutricion_option -> Toast.makeText(this, "Nutricion", Toast.LENGTH_SHORT).show()
+            R.id.nutricion_option -> {
+                val intent = Intent (this, Nutricion::class.java)
+                startActivity(intent)
+            }
             R.id.manejo_option -> {
                 val intent = Intent(this, Manejo::class.java)
                 startActivity(intent)

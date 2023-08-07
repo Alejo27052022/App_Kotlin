@@ -45,7 +45,7 @@
                 android:layout_margin="5dp"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/Img_Nutricion"
+                android:src="@drawable/img_nutricion_bovino"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.476"

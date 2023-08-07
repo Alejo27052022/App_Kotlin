@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FDF9F9"
-    tools:context=".Pages.Nutricion">
+    tools:context=".Pages.Nutricion_Vitaminas">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,6 +69,7 @@
                 app:shapeAppearanceOverlay="@style/roundimageview" />
 
             <FrameLayout
+                android:id="@+id/frame_lipo"
                 android:layout_width="300dp"
                 android:layout_height="100dp"
                 android:background="#FFF9C8"
@@ -88,7 +89,7 @@
                     android:textColor="@color/black"
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:layout_gravity="center||start"
+                    android:layout_gravity="center|start"
                     android:layout_marginLeft="20dp"/>
 
                 <ImageView
@@ -96,12 +97,13 @@
                     android:layout_height="40dp"
                     android:src="@drawable/ilosolubles"
                     android:scaleType="centerCrop"
-                    android:layout_gravity="center||end"
+                    android:layout_gravity="center|end"
                     android:layout_marginRight="50dp"/>
 
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/frame_hidro"
                 android:layout_width="300dp"
                 android:layout_height="100dp"
                 android:background="#FFF9C8"
@@ -121,7 +123,7 @@
                     android:textColor="@color/black"
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:layout_gravity="center||start"
+                    android:layout_gravity="center|start"
                     android:layout_marginLeft="20dp"/>
 
                 <ImageView
@@ -129,7 +131,7 @@
                     android:layout_height="40dp"
                     android:src="@drawable/hidrosoluble"
                     android:scaleType="centerCrop"
-                    android:layout_gravity="center||end"
+                    android:layout_gravity="center|end"
                     android:layout_marginRight="50dp"/>
 
             </FrameLayout>

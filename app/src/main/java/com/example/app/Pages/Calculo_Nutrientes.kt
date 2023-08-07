@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.app.Pages.PopUp_Vitaminas.PopUp_Valor
 import com.example.app.R
 import com.google.android.material.navigation.NavigationView
 
@@ -62,9 +63,9 @@ class Calculo_Nutrientes : AppCompatActivity(), NavigationView.OnNavigationItemS
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
 
-        val popup : ImageButton = findViewById(R.id.popup)
+        val pop_pup : ImageButton = findViewById(R.id.popup)
 
-        popup.setOnClickListener{
+        pop_pup.setOnClickListener{
             val intent = Intent(this, PopUp_Valor::class.java)
                 startActivity(intent)
         }
@@ -94,7 +95,7 @@ class Calculo_Nutrientes : AppCompatActivity(), NavigationView.OnNavigationItemS
             }
             R.id.farmacologia_option -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
             R.id.nutricion_option -> {
-                val intent = Intent(this, Calculo_Nutrientes::class.java)
+                val intent = Intent(this, Nutricion::class.java)
                 startActivity(intent)
             }
             R.id.manejo_option -> {

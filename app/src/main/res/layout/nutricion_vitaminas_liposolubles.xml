@@ -54,6 +54,7 @@
                 app:layout_constraintVertical_bias="0.141" />
 
             <FrameLayout
+                android:id="@+id/vitamina_a"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:background="#FFF9C8"
@@ -68,7 +69,7 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center||bottom"
+                    android:layout_gravity="center|bottom"
                     android:layout_marginBottom="20dp"
                     android:text="Vitamina A"
                     android:textAlignment="center"
@@ -87,6 +88,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/vitamina_d"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:background="#FFF9C8"
@@ -101,7 +103,7 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center||bottom"
+                    android:layout_gravity="center|bottom"
                     android:layout_marginBottom="20dp"
                     android:text="Vitamina D"
                     android:textAlignment="center"
@@ -120,6 +122,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/vitamina_e"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:background="#FFF9C8"
@@ -134,7 +137,7 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center||bottom"
+                    android:layout_gravity="center|bottom"
                     android:layout_marginBottom="20dp"
                     android:text="Vitamina E"
                     android:textAlignment="center"
@@ -153,6 +156,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/vitamina_k"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:background="#FFF9C8"
@@ -167,9 +171,9 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center||bottom"
+                    android:layout_gravity="center|bottom"
                     android:layout_marginBottom="20dp"
-                    android:text="Vitamina D"
+                    android:text="Vitamina K"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="16dp"

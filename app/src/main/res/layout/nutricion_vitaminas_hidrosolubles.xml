@@ -54,6 +54,7 @@
                 app:layout_constraintVertical_bias="0.107" />
 
             <FrameLayout
+                android:id="@+id/frame_vitaB1"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:background="#FFF9C8"
@@ -68,7 +69,7 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center||bottom"
+                    android:layout_gravity="center|bottom"
                     android:layout_marginBottom="12dp"
                     android:text="Vitamina B1"
                     android:textAlignment="center"
@@ -87,6 +88,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/frame_vitaB2"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:background="#FFF9C8"
@@ -101,7 +103,7 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center||bottom"
+                    android:layout_gravity="center|bottom"
                     android:layout_marginBottom="12dp"
                     android:text="Vitamina B2"
                     android:textAlignment="center"
@@ -120,6 +122,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/frame_vitaC"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:background="#FFF9C8"
@@ -134,7 +137,7 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center||bottom"
+                    android:layout_gravity="center|bottom"
                     android:layout_marginBottom="12dp"
                     android:text="Vitamina C"
                     android:textAlignment="center"
@@ -153,6 +156,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/frame_vitaB12"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:background="#FFF9C8"
@@ -167,7 +171,7 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center||bottom"
+                    android:layout_gravity="center|bottom"
                     android:layout_marginBottom="12dp"
                     android:text="Vitamina B12"
                     android:textAlignment="center"
@@ -186,6 +190,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/frame_vitaB7"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:background="#FFF9C8"
@@ -200,7 +205,7 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center||bottom"
+                    android:layout_gravity="center|bottom"
                     android:layout_marginBottom="12dp"
                     android:text="Vitamina B7"
                     android:textAlignment="center"
@@ -219,6 +224,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/frame_vitaB6"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:background="#FFF9C8"
@@ -233,7 +239,7 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center||bottom"
+                    android:layout_gravity="center|bottom"
                     android:layout_marginBottom="12dp"
                     android:text="Vitamina B6"
                     android:textAlignment="center"
@@ -252,6 +258,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/frame_vitaB10"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:background="#FFF9C8"
@@ -266,7 +273,7 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center||bottom"
+                    android:layout_gravity="center|bottom"
                     android:layout_marginBottom="12dp"
                     android:text="Vitamina B10"
                     android:textAlignment="center"
@@ -285,6 +292,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/frame_vitaB8"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:background="#FFF9C8"
@@ -299,7 +307,7 @@
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center||bottom"
+                    android:layout_gravity="center|bottom"
                     android:layout_marginBottom="12dp"
                     android:text="Vitamina B8"
                     android:textAlignment="center"
