@@ -55,6 +55,10 @@
             android:label=""
             android:exported="false" />
         <activity
+            android:name=".Pages.Farmacologia"
+            android:label=""
+            android:exported="false" />
+        <activity
             android:name=".Pages.IndexPage"
             android:label=""
             android:exported="true">
