@@ -97,14 +97,14 @@ class Farmacologia: AppCompatActivity(), NavigationView.OnNavigationItemSelected
                 Toast.makeText(this, "Los dividendos deben ser diferentes de cero", Toast.LENGTH_SHORT).show()
                 return
             }
-
-
+// ...
 
             // Realizar el cálculo
             val resultado = String.format("%.2f", ((pesoAnimal * dosisMedica) / concentracionMed))
 
             // Mostrar el resultado
             resultadoTextView.text = resultado.toString()
+
 
             // Obtener la opción seleccionada en el primer Spinner
             val seleccionSpinner1 = spinner.selectedItem.toString()
@@ -118,8 +118,33 @@ class Farmacologia: AppCompatActivity(), NavigationView.OnNavigationItemSelected
             // Mostrar el resultado
             resultadoTextView.text = textoResultado
 
+            // AÑADI ESTA PARTE DEL CÓDIGO PARA LA LIMPIEZA DE LOS VALORES
+            autoComplete.setOnItemClickListener { _, _, _, _ ->
+                val selectedItem = autoComplete.text.toString()
+
+                // Reiniciar los campos de entrada
+                pesoAnimalEditText.text.clear()
+                dosisMedicaEditText.text.clear()
+                concentracionMedEditText.text.clear()
+
+                // Reiniciar el resultado
+                resultadoTextView.text = ""
+
+                // Hacer visible el botón de dosis cuando se haga clic en un medicamento
+                dosisButton.visibility = Button.VISIBLE
+
+                // Hace visible los contenedores(LinerLayout)
+                val contenedor1: LinearLayout = findViewById(R.id.layout1)
+                val contenedor2: LinearLayout = findViewById(R.id.layout2)
+                val contenedor3: LinearLayout = findViewById(R.id.layout3)
+                contenedor1.visibility = View.VISIBLE
+                contenedor2.visibility = View.VISIBLE
+                contenedor3.visibility = View.VISIBLE
+
+                // ... (Resto del código)
 
 
+            }
 
         }
 

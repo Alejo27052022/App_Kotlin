@@ -75,8 +75,7 @@ class PesoCalculo : AppCompatActivity(), NavigationView.OnNavigationItemSelected
             }
             R.id.farmacologia_option -> {
                 val intent = Intent(this, Farmacologia::class.java)
-                startActivity(intent)
-            }
+                startActivity(intent)}
             R.id.nutricion_option -> {
                 val intent = Intent (this, Nutricion::class.java)
                 startActivity(intent)
@@ -84,11 +83,12 @@ class PesoCalculo : AppCompatActivity(), NavigationView.OnNavigationItemSelected
             R.id.manejo_option -> {
                 val intent = Intent(this, Manejo::class.java)
                 startActivity(intent)
+
             }
-            R.id.reproduccion_option ->{
-                val intent = Intent(this, Reproduccion_Inicio::class.java)
-                startActivity(intent)
-            }
+
+            R.id.reproduccion_option -> Toast.makeText(this, "Reproduccion", Toast.LENGTH_SHORT).show()
+
+
         }
         drawer.closeDrawer(GravityCompat.START)
         return true
