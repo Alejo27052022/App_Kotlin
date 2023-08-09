@@ -11,42 +11,84 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaA
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaD
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaE
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaK
+import com.example.app.Pages.PopUp_Minerales.PopUp_Calcio
+import com.example.app.Pages.PopUp_Minerales.PopUp_Cobalto
+import com.example.app.Pages.PopUp_Minerales.PopUp_Fosforo
+import com.example.app.Pages.PopUp_Minerales.PopUp_Hierro
+import com.example.app.Pages.PopUp_Minerales.PopUp_Magnesio
+import com.example.app.Pages.PopUp_Minerales.PopUp_Potasio
+import com.example.app.Pages.PopUp_Minerales.PopUp_Selenio
+import com.example.app.Pages.PopUp_Minerales.PopUp_Sodio
+import com.example.app.Pages.PopUp_Minerales.PopUp_Zinc
 import com.example.app.R
 import com.google.android.material.navigation.NavigationView
 
-class Nutricion_Liposolubles : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class Nutricion_Minerales_Section : AppCompatActivity (), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var drawer: DrawerLayout
     private lateinit var toggle: ActionBarDrawerToggle
-    override fun onCreate(savedInstanceState: Bundle?){
+
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.nutricion_vitaminas_liposolubles)
+        setContentView(R.layout.nutricion_minerales_secciones)
 
-        val pop_up_vitA : FrameLayout = findViewById(R.id.vitamina_a)
-        pop_up_vitA.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaA::class.java)
+        val calcio : FrameLayout = findViewById(R.id.frame_calcio)
+        calcio.setOnClickListener{
+            val intent = Intent(this, PopUp_Calcio::class.java)
             startActivity(intent)
         }
 
-        val pop_up_vitD : FrameLayout = findViewById(R.id.vitamina_d)
-        pop_up_vitD.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaD::class.java)
+        val cobalto : FrameLayout = findViewById(R.id.frame_cobalto)
+        cobalto.setOnClickListener{
+            val intent = Intent(this, PopUp_Cobalto::class.java)
             startActivity(intent)
         }
 
-        val pop_up_vitE : FrameLayout = findViewById(R.id.vitamina_e)
-        pop_up_vitE.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaE::class.java)
+        val fosforo : FrameLayout = findViewById(R.id.frame_fosforo)
+        fosforo.setOnClickListener{
+            val intent = Intent(this, PopUp_Fosforo::class.java)
             startActivity(intent)
         }
 
-        val pop_up_vitK : FrameLayout = findViewById(R.id.vitamina_k)
-        pop_up_vitK.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaK::class.java)
+        val hierro : FrameLayout = findViewById(R.id.frame_hierro)
+        hierro.setOnClickListener{
+            val intent = Intent(this, PopUp_Hierro::class.java)
+            startActivity(intent)
+        }
+
+        val magnesio : FrameLayout = findViewById(R.id.frame_magnesio)
+        magnesio.setOnClickListener{
+            val intent = Intent(this, PopUp_Magnesio::class.java)
+            startActivity(intent)
+        }
+
+        val potasio : FrameLayout = findViewById(R.id.frame_potasio)
+        potasio.setOnClickListener{
+            val intent = Intent(this, PopUp_Potasio::class.java)
+            startActivity(intent)
+        }
+
+        val selenio : FrameLayout = findViewById(R.id.frame_selenio)
+        selenio.setOnClickListener{
+            val intent = Intent(this, PopUp_Selenio::class.java)
+            startActivity(intent)
+        }
+
+        val sodio : FrameLayout = findViewById(R.id.frame_sodio)
+        sodio.setOnClickListener{
+            val intent = Intent(this, PopUp_Sodio::class.java)
+            startActivity(intent)
+        }
+
+        val yodo : FrameLayout = findViewById(R.id.frame_yodo)
+        yodo.setOnClickListener{
+            val intent = Intent(this, PopUp_Sodio::class.java)
+            startActivity(intent)
+        }
+
+        val zinc : FrameLayout = findViewById(R.id.frame_zinc)
+        zinc.setOnClickListener{
+            val intent = Intent(this, PopUp_Zinc::class.java)
             startActivity(intent)
         }
 
@@ -62,7 +104,6 @@ class Nutricion_Liposolubles : AppCompatActivity(), NavigationView.OnNavigationI
 
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
-
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -109,5 +150,4 @@ class Nutricion_Liposolubles : AppCompatActivity(), NavigationView.OnNavigationI
         }
         return super.onOptionsItemSelected(item)
     }
-
 }
