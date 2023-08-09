@@ -185,7 +185,9 @@ class Reproduccion_Inicio : AppCompatActivity (), NavigationView.OnNavigationIte
                 val intent = Intent(this, Inicio::class.java)
                 startActivity(intent)
             }
-            R.id.farmacologia_option -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
+            R.id.farmacologia_option -> {
+                val intent = Intent(this, Farmacologia::class.java)
+                startActivity(intent)}
             R.id.nutricion_option -> Toast.makeText(this, "Nutricion", Toast.LENGTH_SHORT).show()
             R.id.manejo_option -> {
                 val intent = Intent(this, Inicio::class.java)
