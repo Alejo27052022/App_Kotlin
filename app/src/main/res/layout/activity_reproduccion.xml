@@ -66,10 +66,11 @@
                 app:layout_constraintHorizontal_bias="0.476"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.4"
+                app:layout_constraintVertical_bias="0.316"
                 app:shapeAppearanceOverlay="@style/roundimageview" />
 
             <FrameLayout
+                android:id="@+id/frame_sincronizacion"
                 android:layout_width="131dp"
                 android:layout_height="116dp"
                 android:background="#FFF9C8"
@@ -98,7 +99,8 @@
 
             </FrameLayout>
 
-            <FrameLayout
+             <FrameLayout
+                android:id="@+id/frame_parto"
                 android:layout_width="131dp"
                 android:layout_height="116dp"
                 android:background="#FFF9C8"

@@ -39,6 +39,64 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.034" />
 
+            <TextView
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="La gran importancia de los minerales en dieta reside en que son necesarios y esenciales para transformar la proteína y la energía de los alimentos en componentes del organismo o en productos animales como: leche, carne, terneros, huesos, dientes, piel, etc."
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.411"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.128" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="@dimen/width_image_manejo"
+                android:layout_height="@dimen/height_image_manejo"
+                android:src="@drawable/mineral"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.44"
+                app:shapeAppearanceOverlay="@style/roundimageview" />
+
+            <FrameLayout
+                android:id="@+id/frame_minerales"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:background="#FFF9C8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.828">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginLeft="20dp"
+                    android:text="Tipos de Minerales"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|end"
+                    android:layout_marginRight="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_minerales" />
+
+            </FrameLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
