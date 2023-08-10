@@ -88,6 +88,9 @@ class Farmacologia: AppCompatActivity(), NavigationView.OnNavigationItemSelected
             val concentracionMedEditText = findViewById<EditText>(R.id.concentracionmed)
             val resultadoTextView = findViewById<TextView>(R.id.textView4)
 
+            val spinner1 = findViewById<Spinner>(R.id.spinner)
+            val spinner2 = findViewById<Spinner>(R.id.spinner2)
+
             // Obtener los valores ingresados
             val pesoAnimalText = pesoAnimalEditText.text.toString()
             val dosisMedicaText = dosisMedicaEditText.text.toString()
@@ -99,63 +102,47 @@ class Farmacologia: AppCompatActivity(), NavigationView.OnNavigationItemSelected
                 return
             }
 
-            // Obtener los valores ingresados
-            val pesoAnimal = pesoAnimalEditText.text.toString().toDouble()
-            val dosisMedica = dosisMedicaEditText.text.toString().toDouble()
-            val concentracionMed = concentracionMedEditText.text.toString().toDouble()
+            // Obtener la opción seleccionada en el primer Spinner
+            val seleccionSpinner1 = spinner1.selectedItem.toString()
+
+            // Obtener la opción seleccionada en el segundo Spinner
+            val seleccionSpinner2 = spinner2.selectedItem.toString()
+
+            // Realizar conversiones de unidades según las selecciones de los Spinners
+            val pesoAnimal = pesoAnimalText.toDouble()
+            val dosisMedica = dosisMedicaText.toDouble()
+
+            // Convertir dosis médica a mg si está en ml
+            val dosisMedica_mg = if (seleccionSpinner2 == "ml") dosisMedica * 1000 else dosisMedica
+
+            val concentracionMed = concentracionMedText.toDouble()
+
             // Verificar que los dividendos sean diferentes de cero
-            if (dosisMedica == 0.0 || concentracionMed == 0.0) {
+            if (dosisMedica_mg == 0.0 || concentracionMed == 0.0) {
                 Toast.makeText(this, "Los dividendos deben ser diferentes de cero", Toast.LENGTH_SHORT).show()
                 return
             }
 
             // Realizar el cálculo
-            val resultado = String.format("%.2f", ((pesoAnimal * dosisMedica) / concentracionMed))
-
-            // Mostrar el resultado
-            resultadoTextView.text = resultado.toString()
-
-
-            // Obtener la opción seleccionada en el primer Spinner
-            val seleccionSpinner1 = spinner.selectedItem.toString()
-
-            // Obtener la opción seleccionada en el segundo Spinner
-            val seleccionSpinner2 = spinner2.selectedItem.toString()
+            val dosisFinal = (pesoAnimal * dosisMedica_mg) / concentracionMed
 
             // Construir el texto a mostrar en el resultado
-            val textoResultado = "Dosis: $resultado $seleccionSpinner2/$seleccionSpinner1"
+            val textoResultado = "Dosis: %.2f ml/kg".format(dosisFinal)
 
             // Mostrar el resultado
             resultadoTextView.text = textoResultado
 
-            // AÑADI ESTA PARTE DEL CÓDIGO PARA LA LIMPIEZA DE LOS VALORES
-            autoComplete.setOnItemClickListener { _, _, _, _ ->
-                val selectedItem = autoComplete.text.toString()
-
-                // Reiniciar los campos de entrada
-                pesoAnimalEditText.text.clear()
-                dosisMedicaEditText.text.clear()
-                concentracionMedEditText.text.clear()
-
-                // Reiniciar el resultado
-                resultadoTextView.text = ""
-
-                // Hacer visible el botón de dosis cuando se haga clic en un medicamento
-                dosisButton.visibility = Button.VISIBLE
-
-                // Hace visible los contenedores(LinerLayout)
-                val contenedor1: LinearLayout = findViewById(R.id.layout1)
-                val contenedor2: LinearLayout = findViewById(R.id.layout2)
-                val contenedor3: LinearLayout = findViewById(R.id.layout3)
-                val contenedor4: LinearLayout = findViewById(R.id.layoutIndicaciones)
-                contenedor1.visibility = View.VISIBLE
-                contenedor2.visibility = View.VISIBLE
-                contenedor3.visibility = View.VISIBLE
-                contenedor4.visibility = View.VISIBLE
-
-            }
-
+            // Hacer visible los contenedores (LinearLayout)
+            val contenedor1: LinearLayout = findViewById(R.id.layout1)
+            val contenedor2: LinearLayout = findViewById(R.id.layout2)
+            val contenedor3: LinearLayout = findViewById(R.id.layout3)
+            val contenedor4: LinearLayout = findViewById(R.id.layoutIndicaciones)
+            contenedor1.visibility = View.VISIBLE
+            contenedor2.visibility = View.VISIBLE
+            contenedor3.visibility = View.VISIBLE
+            contenedor4.visibility = View.VISIBLE
         }
+
 
 
 
