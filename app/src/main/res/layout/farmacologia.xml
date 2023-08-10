@@ -190,7 +190,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/color_button"
-                android:onClick="calcularDosis"
+
                 android:text="Calcular"
                 android:visibility="gone"
                 tools:ignore="HardcodedText"

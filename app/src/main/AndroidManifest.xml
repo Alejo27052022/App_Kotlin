@@ -22,11 +22,8 @@
         <activity
             android:name=".Pages.IndexPage"
             android:label=""
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
+
         </activity>
 
         <!-- Pages Reproduccion ><!-->
@@ -105,7 +102,13 @@
         <activity
             android:name=".Pages.Farmacologia"
             android:label=""
-            android:exported="false" />
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
 
 
         <!-- Mensajes Emergentes Vitaminas/><!-->
