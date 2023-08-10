@@ -52,7 +52,7 @@ class Nutricion_Minerales : AppCompatActivity(), NavigationView.OnNavigationItem
                 startActivity(intent)
             }
             R.id.farmacologia_option -> {
-                val intent = Intent(this, Farmacologia::class.java)
+                val intent = Intent(this, Farmacologia_Inicio::class.java)
                 startActivity(intent)
             }
             R.id.nutricion_option -> {

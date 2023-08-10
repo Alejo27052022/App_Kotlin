@@ -4,51 +4,23 @@ import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.FrameLayout
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaA
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaD
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaE
-import com.example.app.Pages.PopUp_Vitaminas.PopUp_VitaminaK
 import com.example.app.R
 import com.google.android.material.navigation.NavigationView
 
-class Nutricion_Liposolubles : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-
+class Farmacologia_Inicio : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var drawer: DrawerLayout
     private lateinit var toggle: ActionBarDrawerToggle
-    override fun onCreate(savedInstanceState: Bundle?){
+
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.nutricion_vitaminas_liposolubles)
-
-        val pop_up_vitA : FrameLayout = findViewById(R.id.vitamina_a)
-        pop_up_vitA.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaA::class.java)
-            startActivity(intent)
-        }
-
-        val pop_up_vitD : FrameLayout = findViewById(R.id.vitamina_d)
-        pop_up_vitD.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaD::class.java)
-            startActivity(intent)
-        }
-
-        val pop_up_vitE : FrameLayout = findViewById(R.id.vitamina_e)
-        pop_up_vitE.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaE::class.java)
-            startActivity(intent)
-        }
-
-        val pop_up_vitK : FrameLayout = findViewById(R.id.vitamina_k)
-        pop_up_vitK.setOnClickListener{
-            val intent = Intent(this, PopUp_VitaminaK::class.java)
-            startActivity(intent)
-        }
+        setContentView(R.layout.farmacologia_inicio)
 
         val toolbar : Toolbar = findViewById(R.id.toolbar_main)
         setSupportActionBar(toolbar)
@@ -62,6 +34,12 @@ class Nutricion_Liposolubles : AppCompatActivity(), NavigationView.OnNavigationI
 
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
+
+        val calculo_farm : ImageView = findViewById(R.id.id_farmacologia)
+        calculo_farm.setOnClickListener {
+            val intent = Intent(this, Farmacologia::class.java)
+            startActivity(intent)
+        }
 
     }
 
@@ -109,5 +87,4 @@ class Nutricion_Liposolubles : AppCompatActivity(), NavigationView.OnNavigationI
         }
         return super.onOptionsItemSelected(item)
     }
-
 }

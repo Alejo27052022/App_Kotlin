@@ -86,7 +86,7 @@ class Manejo_Info : AppCompatActivity(), NavigationView.OnNavigationItemSelected
                 startActivity(intent)
             }
             R.id.farmacologia_option -> {
-                val intent = Intent(this, Farmacologia::class.java)
+                val intent = Intent(this, Farmacologia_Inicio::class.java)
                 startActivity(intent)}
             R.id.nutricion_option -> {
                 val intent = Intent (this, Nutricion::class.java)
