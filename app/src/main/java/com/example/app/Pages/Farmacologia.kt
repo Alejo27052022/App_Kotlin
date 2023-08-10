@@ -60,17 +60,13 @@ class Farmacologia: AppCompatActivity(), NavigationView.OnNavigationItemSelected
             startActivity(intent)
         }
 
-
-
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
-
 
         val options = resources.getStringArray(R.array.options_array)
         spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, options)
         spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = spinnerAdapter
-
 
         val options2 = resources.getStringArray(R.array.options_array2)
         spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, options2)
@@ -78,10 +74,7 @@ class Farmacologia: AppCompatActivity(), NavigationView.OnNavigationItemSelected
         spinner2.adapter = spinnerAdapter
 
 
-
         fun calcularDosis(view: View) {
-
-
 
             val pesoAnimalEditText = findViewById<EditText>(R.id.pesoanimal)
             val dosisMedicaEditText = findViewById<EditText>(R.id.dosismedica)
@@ -108,7 +101,6 @@ class Farmacologia: AppCompatActivity(), NavigationView.OnNavigationItemSelected
                 Toast.makeText(this, "Los dividendos deben ser diferentes de cero", Toast.LENGTH_SHORT).show()
                 return
             }
-
 
             // Realizar el cálculo
             val resultado = String.format("%.2f", ((pesoAnimal * dosisMedica) / concentracionMed))

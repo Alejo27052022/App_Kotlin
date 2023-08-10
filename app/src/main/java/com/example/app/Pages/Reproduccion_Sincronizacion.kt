@@ -160,8 +160,6 @@ class Reproduccion_Sincronizacion : AppCompatActivity (), NavigationView.OnNavig
 
             val nuevaFechaHora = calendar.time
 
-
-
             return sdf.format(nuevaFechaHora)
         } catch (e: Exception) {
             e.printStackTrace()

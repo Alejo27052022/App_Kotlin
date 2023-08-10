@@ -19,4 +19,53 @@
     <string name="kh">kh</string>
     <string name="kg">KG</string>
     <string name="lb">LB</string>
+
+    <string name="info_comportamiento">
+
+    <b>Comportamiento Individual:</b>
+        <b>Reactividad:</b>
+Permite al animal escapar de situaciones perjudiciales y mantener su seguridad.
+        <b>Ingestion:</b>
+Sigue pautas de pastoreo diurno en bovinos, con periodos de rumia, descanso y consumo de agua.
+        <b>Exploración:</b>
+Son los bovinos que tienden a investigar y familiarizarse con su entorno.
+
+   <b>Comportamiento Social:</b>
+La estabilidad en las relaciones del grupo de rodeo depende del reconocimiento entre sus miembros, que se determina por factores como raza, tamaño, edad, cuernos y sexo.
+    </string>
+
+    <string name="info_manejo">
+        <b>Carga animal</b>
+        Es el número de animales por unidad de superficie.
+
+        <b>Ajuste de carga animal:</b>
+        Este procedimiento determina periódicamente la cantidad de animales que el campo puede soportar.
+
+        <b>Capacidad de carga</b>
+        La capacidad de carga de un campo o potrero está determinada por la productividad de forraje del pastizal.
+
+        <b>Presión de pastoreo</b>
+        Es el número de animales por cantidad de pasto disponible.
+
+        <b>Asignación de forraje</b>
+        Es la cantidad de forraje que decido asignar por animal y por unidad de tiempo
+    </string>
+
+    <string name="info_ordeno">El ordeño es el procedimiento de extraer la leche de las glándulas mamarias, llamadas ubre, de un mamífero, habitualmente del ganado vacuno. Se puede hacer de forma manual o mecánica y es necesario que el animal, al ser mamífero, haya tenido una cría.
+    </string>
+
+    <string name="info_pastoreo">
+        <b>Pastoreo continuo</b>
+            El pastoreo continuo es un sistema de pastoreo en el que los animales permanecen en un mismo potrero durante un período prolongado de tiempo sin ser movidos a otros potreros.
+
+        <b>Pastoreo rotacional</b>
+            El pastoreo rotacional es un sistema de pastoreo en el que los animales se mueven de un potrero a otro en un patrón preestablecido para permitir que los pastos descansen y se recuperen.
+
+        <b>Pastoreo Diferido</b>
+            El sistema consiste en dejar algunos potreros en descanso para usarlos durante la época seca, y se puede conservar el pasto en el campo para ser utilizado como heno.
+
+        <b>Pastoreo Cero</b>
+            Este sistema implica confinar el ganado y cortar el pasto para su alimentación. Requiere construcciones, equipo de cosecha y suficiente agua.
+    </string>
+
 </resources>

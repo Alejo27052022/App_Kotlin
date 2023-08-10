@@ -95,6 +95,10 @@
             android:name=".Pages.Manejo"
             android:label=""
             android:exported="false" />
+        <activity
+            android:name=".Pages.Manejo_Info"
+            android:label=""
+            android:exported="false"/>
 
         <!-- Pages Farmacologia ><!-->
 
@@ -202,6 +206,37 @@
             android:label=""
             android:theme="@style/Theme.App.PopUp"/>
 
+        <!-- Mensajes Emergentes Farmacologia/><!-->
+        <activity
+            android:name=".Pages.PopUp_Farmacologia.PopUp_Farmacologia"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+
+        <!-- Mensajes Emergentes Manejo/><!-->
+        <activity
+            android:name=".Pages.PopUp_InfoManejo.PopUp_Bienestar"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_InfoManejo.PopUp_Canal"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_InfoManejo.PopUp_Comportamiento"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_InfoManejo.PopUp_Manejo"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_InfoManejo.PopUp_Ordeno"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_InfoManejo.PopUp_Pastoreo"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
 
     </application>
 

@@ -1,36 +1,33 @@
 package com.example.app.Pages
 
-import android.app.DatePickerDialog
-import android.app.TimePickerDialog
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.MenuItem
-import android.view.View
-import android.widget.EditText
 import android.widget.FrameLayout
-import android.widget.ImageButton
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.app.Pages.PopUp_InfoManejo.PopUp_Bienestar
+import com.example.app.Pages.PopUp_InfoManejo.PopUp_Canal
+import com.example.app.Pages.PopUp_InfoManejo.PopUp_Comportamiento
+import com.example.app.Pages.PopUp_InfoManejo.PopUp_Manejo
+import com.example.app.Pages.PopUp_InfoManejo.PopUp_Ordeno
+import com.example.app.Pages.PopUp_InfoManejo.PopUp_Pastoreo
 import com.example.app.R
 import com.google.android.material.navigation.NavigationView
-import java.text.SimpleDateFormat
-import java.util.Calendar
-import java.util.Locale
-import androidx.appcompat.widget.Toolbar
 
-class Reproduccion_Inicio : AppCompatActivity (), NavigationView.OnNavigationItemSelectedListener{
-
+class Manejo_Info : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var drawer: DrawerLayout
     private lateinit var toggle: ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_reproduccion)
+        setContentView(R.layout.manejo_informacion)
+
         val toolbar : Toolbar = findViewById(R.id.toolbar_main)
         setSupportActionBar(toolbar)
 
@@ -44,18 +41,41 @@ class Reproduccion_Inicio : AppCompatActivity (), NavigationView.OnNavigationIte
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
 
-        val sincronizacion : FrameLayout = findViewById(R.id.frame_sincronizacion)
-        sincronizacion.setOnClickListener {
-            val intent = Intent(this, Reproduccion_Sincronizacion::class.java)
+        val bienestar : FrameLayout = findViewById(R.id.frame_bienestar)
+        bienestar.setOnClickListener {
+            val intent = Intent(this, PopUp_Bienestar::class.java)
             startActivity(intent)
         }
 
-        val parto : FrameLayout = findViewById(R.id.frame_parto)
-        parto.setOnClickListener {
-            val intent = Intent(this, Reproduccion_Parto::class.java)
+        val canal : FrameLayout = findViewById(R.id.frame_canal)
+        canal.setOnClickListener {
+            val intent = Intent(this, PopUp_Canal::class.java)
             startActivity(intent)
         }
 
+        val comportamiento : FrameLayout = findViewById(R.id.frame_comportamiento)
+        comportamiento.setOnClickListener {
+            val intent = Intent(this, PopUp_Comportamiento::class.java)
+            startActivity(intent)
+        }
+
+        val manejo : FrameLayout = findViewById(R.id.frame_manejo)
+        manejo.setOnClickListener {
+            val intent = Intent(this, PopUp_Manejo::class.java)
+            startActivity(intent)
+        }
+
+        val ordeno : FrameLayout = findViewById(R.id.frame_ordeno)
+        ordeno.setOnClickListener {
+            val intent = Intent(this, PopUp_Ordeno::class.java)
+            startActivity(intent)
+        }
+
+        val pastoreo : FrameLayout = findViewById(R.id.frame_pastoreo)
+        pastoreo.setOnClickListener {
+            val intent = Intent(this, PopUp_Pastoreo::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -67,8 +87,7 @@ class Reproduccion_Inicio : AppCompatActivity (), NavigationView.OnNavigationIte
             }
             R.id.farmacologia_option -> {
                 val intent = Intent(this, Farmacologia::class.java)
-                startActivity(intent)
-            }
+                startActivity(intent)}
             R.id.nutricion_option -> {
                 val intent = Intent (this, Nutricion::class.java)
                 startActivity(intent)
@@ -76,11 +95,12 @@ class Reproduccion_Inicio : AppCompatActivity (), NavigationView.OnNavigationIte
             R.id.manejo_option -> {
                 val intent = Intent(this, Manejo::class.java)
                 startActivity(intent)
+
             }
-            R.id.reproduccion_option ->{
-                val intent = Intent(this, Reproduccion_Inicio::class.java)
-                startActivity(intent)
-            }
+
+            R.id.reproduccion_option -> Toast.makeText(this, "Reproduccion", Toast.LENGTH_SHORT).show()
+
+
         }
         drawer.closeDrawer(GravityCompat.START)
         return true

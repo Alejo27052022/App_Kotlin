@@ -3,8 +3,8 @@
     <dimen name="image_width">400dp</dimen>
     <dimen name="image_height">750dp</dimen>
 
-    <dimen name="width_image_manejo">390dp</dimen>
-    <dimen name="height_image_manejo">280dp</dimen>
+    <dimen name="width_image_manejo">320dp</dimen>
+    <dimen name="height_image_manejo">220dp</dimen>
 
     <dimen name="width_section">400dp</dimen>
     <dimen name="height_section">90dp</dimen>
