@@ -1,5 +1,6 @@
 package com.example.app.Pages.PopUp_Farmacologia
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
@@ -13,49 +14,49 @@ import com.example.app.R
 class PopUp_Farmacologia : AppCompatActivity(){
 
     private lateinit var autoComplete: AutoCompleteTextView
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.popup_farmacologia)
 
 
 
-        val items = listOf(
-            "Abamectina",
-            "Amoxicilina",
-            "Amoxicilina",
-            "Buserelina acetato",
-            "Cefalexina monohidrato",
-            "Ciprofloxacina",
-            "Closantel",
-            "Diazinón",
-            "Eprinomectina",
-            "Fenilbutazona, Dexametasona",
-            "Fipronil, Fluazurón ",
-            "Florfenicol",
-            "Gluconato de Calcio",
-            "Ivermectina",
-            "Ketamina",
-            "Neomicina",
-            "Nitroxinil",
-            "Oxitetraciclina",
-            "Oxitocina",
-            "Pentobarbital sódico",
-            "Praziquantel",
-            "Sulfato de cefquinoma",
-            "Triclabendazol",
-            "Vitamina A",
-            "Vitamina C",
-            "Xilazina"
+//        val items = listOf(
+//            "Abamectina",
+//            "Amoxicilina",
+//            "Amoxicilina",
+//            "Buserelina acetato",
+//            "Cefalexina monohidrato",
+//            "Ciprofloxacina",
+//            "Closantel",
+//            "Diazinón",
+//            "Eprinomectina",
+//            "Fenilbutazona, Dexametasona",
+//            "Fipronil, Fluazurón ",
+//            "Florfenicol",
+//            "Gluconato de Calcio",
+//            "Ivermectina",
+//            "Ketamina",
+//            "Neomicina",
+//            "Nitroxinil",
+//            "Oxitetraciclina",
+//            "Oxitocina",
+//            "Pentobarbital sódico",
+//            "Praziquantel",
+//            "Sulfato de cefquinoma",
+//            "Triclabendazol",
+//            "Vitamina A",
+//            "Vitamina C",
+//            "Xilazina"
+//
+//        )
 
-        )
+
+
+        val selectedFarmaco = intent.getStringExtra("selectedFarmaco")
 
 
 
-        val adapter = ArrayAdapter(this, R.layout.list_item, items)
-        autoComplete.setAdapter(adapter)
-
-        autoComplete.setOnItemClickListener { parent, view, position, id ->
-            val selectedItem = autoComplete.text.toString()
 
             val farmaco1_indi: TextView = findViewById(R.id.indicaciones)
             val farmaco1_dosis: TextView = findViewById(R.id.dosis)
@@ -112,7 +113,7 @@ class PopUp_Farmacologia : AppCompatActivity(){
             val farmaco27_indi: TextView = findViewById(R.id.indicaciones)
             val farmaco27_dosis: TextView = findViewById(R.id.dosis)
             // Realizar comparación para mostrar el botón de dosis si se selecciona un fármaco específico
-            when (selectedItem) {
+            when (selectedFarmaco) {
 
                 "Abamectina" -> {
                     farmaco1_indi.text = getString(R.string.farma1_indicaciones)
@@ -251,6 +252,6 @@ class PopUp_Farmacologia : AppCompatActivity(){
                 }
             }
 
-        }
+
     }
 }

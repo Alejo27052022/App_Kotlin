@@ -58,6 +58,11 @@ class Farmacologia: AppCompatActivity(), NavigationView.OnNavigationItemSelected
         val imgindicaciones : ImageView = findViewById(R.id.ImgIndicaciones)
         imgindicaciones.setOnClickListener{
             val intent = Intent(this, PopUp_Farmacologia::class.java)
+            
+
+            val selectedItem = autoComplete.text.toString()
+
+            intent.putExtra("selectedFarmaco", selectedItem)
             startActivity(intent)
         }
 
@@ -211,11 +216,15 @@ class Farmacologia: AppCompatActivity(), NavigationView.OnNavigationItemSelected
             contenedor3.visibility = View.VISIBLE
             contenedor4.visibility = View.VISIBLE
 
-
-
+            val selectedItem = autoComplete.text.toString()
+            val intent = Intent(this, PopUp_Farmacologia::class.java)
+            intent.putExtra("selectedFarmaco", selectedItem)
+            startActivity(intent)
 
 
         }
+
+
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
