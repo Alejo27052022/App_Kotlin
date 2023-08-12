@@ -57,7 +57,10 @@ class Nutricion_Vitaminas : AppCompatActivity(), NavigationView.OnNavigationItem
                 val intent = Intent(this, Inicio::class.java)
                 startActivity(intent)
             }
-            R.id.farmacologia_option -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
+            R.id.farmacologia_option -> {
+                val intent = Intent(this, Farmacologia_Inicio::class.java)
+                startActivity(intent)
+            }
             R.id.nutricion_option -> {
                 val intent = Intent (this, Nutricion::class.java)
                 startActivity(intent)
@@ -65,12 +68,11 @@ class Nutricion_Vitaminas : AppCompatActivity(), NavigationView.OnNavigationItem
             R.id.manejo_option -> {
                 val intent = Intent(this, Manejo::class.java)
                 startActivity(intent)
-
             }
-
-            R.id.reproduccion_option -> Toast.makeText(this, "Reproduccion", Toast.LENGTH_SHORT).show()
-
-
+            R.id.reproduccion_option ->{
+                val intent = Intent(this, Reproduccion_Inicio::class.java)
+                startActivity(intent)
+            }
         }
         drawer.closeDrawer(GravityCompat.START)
         return true

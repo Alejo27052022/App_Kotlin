@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="image_width">320dp</dimen>
-    <dimen name="image_height">550dp</dimen>
+    <dimen name="image_width">400dp</dimen>
+    <dimen name="image_height">750dp</dimen>
+
+    <dimen name="width_image_manejo">320dp</dimen>
+    <dimen name="height_image_manejo">220dp</dimen>
+
+    <dimen name="width_section">400dp</dimen>
+    <dimen name="height_section">90dp</dimen>
+
+    <dimen name="section_height">150dp</dimen>
+
+    <dimen name="width_vertical">170dp</dimen>
+    <dimen name="height_vertical">250dp</dimen>
 </resources>

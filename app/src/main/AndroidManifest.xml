@@ -6,11 +6,43 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher_logo"
-        android:label="@string/app_name"
+        android:label="Control Bovinos"
         android:roundIcon="@mipmap/ic_launcher_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.App"
         tools:targetApi="31">
+
+        <!-- Pages Index and Inicio/><!-->
+        <activity
+            android:name=".Pages.Inicio"
+            android:exported="false"
+            android:label=""
+            android:screenOrientation="fullUser"/>
+
+        <activity
+            android:name=".Pages.IndexPage"
+            android:label=""
+            android:exported="false">
+
+        </activity>
+
+        <!-- Pages Reproduccion ><!-->
+
+        <activity
+            android:name=".Pages.Reproduccion_Sincronizacion"
+            android:label=""
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Pages.Reproduccion_Inicio"
+            android:label=""
+            android:exported="false"/>
+        <activity
+            android:name=".Pages.Reproduccion_Parto"
+            android:label=""
+            android:exported="false"/>
+
+        <!-- Pages Nutricion ><!-->
 
         <activity
             android:name=".Pages.Nutricion"
@@ -29,19 +61,29 @@
             android:label=""
             android:exported="false"/>
         <activity
+            android:name=".Pages.Nutricion_Minerales"
+            android:label=""
+            android:exported="false"/>
+        <activity
+            android:name=".Pages.Nutricion_Minerales_Section"
+            android:label=""
+            android:exported="false"/>
+        <activity
             android:name=".Pages.Calculo_Nutrientes"
             android:label=""
-            android:exported="false">
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+
+        <!-- Pages Manejo ><!-->
+
         <activity
             android:name=".Pages.Section_Forraje"
             android:label=""
             android:exported="false"/>
-        <activity
-            android:name=".Pages.Inicio"
-            android:exported="false"
-            android:label=""
-            android:screenOrientation="fullUser"/>
         <activity
             android:name=".Pages.RendimientoCalculo"
             android:label=""
@@ -55,16 +97,23 @@
             android:label=""
             android:exported="false" />
         <activity
-            android:name=".Pages.IndexPage"
+            android:name=".Pages.Manejo_Info"
             android:label=""
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"/>
 
-        <!-- Mensajes Emergentes/><!-->
+        <!-- Pages Farmacologia ><!-->
+
+        <activity
+            android:name=".Pages.Farmacologia"
+            android:label=""
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".Pages.Farmacologia_Inicio"
+            android:label=""
+            android:exported="false"/>
+
+        <!-- Mensajes Emergentes Vitaminas/><!-->
 
         <activity
             android:name=".Pages.PopUp_Vitaminas.PopUp_Valor"
@@ -116,6 +165,81 @@
             android:theme="@style/Theme.App.PopUp"/>
         <activity
             android:name=".Pages.PopUp_Vitaminas.PopUp_VitaminaC"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+
+        <!-- Mensajes Emergentes Minerales/><!-->
+        
+        <activity
+            android:name=".Pages.PopUp_Minerales.PopUp_Cobalto"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_Minerales.PopUp_Fosforo"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_Minerales.PopUp_Hierro"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_Minerales.PopUp_Magnesio"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_Minerales.PopUp_Potasio"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_Minerales.PopUp_Selenio"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_Minerales.PopUp_Sodio"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_Minerales.PopUp_Yodo"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_Minerales.PopUp_Zinc"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_Minerales.PopUp_Calcio"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+
+        <!-- Mensajes Emergentes Farmacologia/><!-->
+        <activity
+            android:name=".Pages.PopUp_Farmacologia.PopUp_Farmacologia"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+
+        <!-- Mensajes Emergentes Manejo/><!-->
+        <activity
+            android:name=".Pages.PopUp_InfoManejo.PopUp_Bienestar"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_InfoManejo.PopUp_Canal"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_InfoManejo.PopUp_Comportamiento"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_InfoManejo.PopUp_Manejo"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_InfoManejo.PopUp_Ordeno"
+            android:label=""
+            android:theme="@style/Theme.App.PopUp"/>
+        <activity
+            android:name=".Pages.PopUp_InfoManejo.PopUp_Pastoreo"
             android:label=""
             android:theme="@style/Theme.App.PopUp"/>
 

@@ -5,6 +5,7 @@ import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
@@ -26,9 +27,10 @@ class Manejo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
         val toolbar : Toolbar = findViewById(R.id.toolbar_main)
         setSupportActionBar(toolbar)
 
-        val peso: ConstraintLayout = findViewById(R.id.Peso_Calculo)
-        val canal: ConstraintLayout = findViewById(R.id.Rendimiento_Canal)
-        val section_forager: ConstraintLayout = findViewById(R.id.Section_forr)
+        val peso: ImageView = findViewById(R.id.Peso_Calculo)
+        val canal: ImageView = findViewById(R.id.Rendimiento_Canal)
+        val section_forager: ImageView = findViewById(R.id.Section_forr)
+        val info : ImageView = findViewById(R.id.Informacion)
 
         peso.setOnClickListener{
             val intent = Intent(this, PesoCalculo::class.java)
@@ -40,6 +42,10 @@ class Manejo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
         }
         section_forager.setOnClickListener{
             val intent = Intent(this, Section_Forraje::class.java)
+            startActivity(intent)
+        }
+        info.setOnClickListener {
+            val intent = Intent(this, Manejo_Info::class.java)
             startActivity(intent)
         }
 
@@ -61,7 +67,10 @@ class Manejo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
                 val intent = Intent(this, Inicio::class.java)
                 startActivity(intent)
             }
-            R.id.farmacologia_option -> Toast.makeText(this, "Farmacologia", Toast.LENGTH_SHORT).show()
+            R.id.farmacologia_option -> {
+                val intent = Intent(this, Farmacologia_Inicio::class.java)
+                startActivity(intent)
+            }
             R.id.nutricion_option -> {
                 val intent = Intent (this, Nutricion::class.java)
                 startActivity(intent)
@@ -69,12 +78,11 @@ class Manejo : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
             R.id.manejo_option -> {
                 val intent = Intent(this, Manejo::class.java)
                 startActivity(intent)
-
             }
-
-            R.id.reproduccion_option -> Toast.makeText(this, "Reproduccion", Toast.LENGTH_SHORT).show()
-
-
+            R.id.reproduccion_option ->{
+                val intent = Intent(this, Reproduccion_Inicio::class.java)
+                startActivity(intent)
+            }
         }
         drawer.closeDrawer(GravityCompat.START)
         return true
